@@ -9,6 +9,7 @@ import {
   KeyboardTimePicker,
 } from "@material-ui/pickers";
 import "./appointment.css";
+import { BASE_URL } from './api/api';
 
 const Appoinment = () => {
   const d = new Date();
@@ -24,7 +25,7 @@ const Appoinment = () => {
   function saveAppointment(e) {
     e.preventDefault();
     let data = { appointment_name, phone, appointment_date, appointment_time };
-    axios.post('http://127.0.0.1:8000/api/set-appoint', data)
+    axios.post(`${BASE_URL}/set-appoint`, data)
       .then( res => 
         alert(res.data)
       ).catch(error => {

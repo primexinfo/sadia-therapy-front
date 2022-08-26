@@ -10,16 +10,12 @@
 }
 .blog-section{
   display: flex;
-  justify-content: flex-end;
+  justify-content:flex-start;
   align-items: center;
 }
 .blog-section h1{
   margin-left: 3rem;
 }
-.long-text{
-
-  width: 60ch;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+.section-info{
+  padding-left: 2rem;
 }

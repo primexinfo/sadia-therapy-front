@@ -4,8 +4,8 @@ import { Button } from "./Button";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 import "./infosection.css";
-import {Link} from 'react-router-dom';
-import {api, IMG_BASE_URL} from './api/api'
+import { Link } from "react-router-dom";
+import { api, IMG_BASE_URL } from "./api/api";
 const Section = styled.div`
   width: 100%;
   height: 90%;
@@ -55,19 +55,19 @@ object-fit: cover;
     height:90%
 }`;
 
-
-
 const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
-    const [frontBlog, setFrontBlog] = useState([]);
-   
+  const [frontBlog, setFrontBlog] = useState([]);
 
-      useEffect(() => {
-     axios.get(api.frontBlogs).then(res=>{
-        setFrontBlog(res.data)
-     }).catch(err=>{
+  useEffect(() => {
+    axios
+      .get(api.frontBlogs)
+      .then((res) => {
+        setFrontBlog(res.data);
+      })
+      .catch((err) => {
         console.log(err);
-     })
-      }, []);
+      });
+  }, []);
 
   return (
     <Section>
@@ -81,24 +81,30 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
             <Button className="button" to={"/blogs"}>
               Read More
             </Button>
-          </div> */} 
-          <h3 className="text-center my-therapy"> Explore my therapy</h3>
-            {
-              frontBlog.map((value)=>{
-                return <div className="blog-margin">
-                  <div className="blog-section">
-                    <img className="person-img" to={"/blogs"} src={`${IMG_BASE_URL}/blogs/${value.photo}`} alt="" />
-                    <h1 >{value.title}</h1>
-                      
-                  </div>
-                  <p className="long-text"> {value.sub_title} <br /></p>
-                    <Button className="button" to={"/blogs"}>
-                      Read More
-                    </Button>
-                  </div>
-              })
-            }
-          
+          </div> */}
+          <h2 className="text-center my-therapy"> Explore my therapy</h2>
+          {frontBlog.map((value) => {
+            return (
+              <div className="blog-margin">
+                <div className="blog-section">
+                  <img
+                    className="person-img"
+                    to={"/blogs"}
+                    src={`${IMG_BASE_URL}/blogs/${value.photo}`}
+                    alt=""
+                  />
+                  <h1>{value.title}</h1>
+                </div>
+                <div className="section-info">
+                  <p dangerouslySetInnerHTML={{ __html: value.sub_title }}></p>
+
+                  <Button className="button" to={"/blogs"}>
+                    Read More
+                  </Button>
+                </div>
+              </div>
+            );
+          })}
         </ColumnLeft>
 
         <ColumnRigth reverse={reverse}>

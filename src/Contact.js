@@ -13,13 +13,13 @@ function Contact() {
     </div>
     <div className='conteiner anim'>
       <div className='contactInfo'>
-          <div className='box'>
+          {/* <div className='box'>
             <div className='icon'> <FontAwesomeIcon icon={faLocationDot} /></div>
             <div className='text'>
               <h3>Address</h3>
               <p>43 firtree Avenue, Sale <br /> M33 5RQ, UK. </p>
             </div>
-          </div>
+          </div> */}
         <div className='box'>
               <div className='icon'> <FontAwesomeIcon icon={faPhone} /></div>
               <div className='text'>

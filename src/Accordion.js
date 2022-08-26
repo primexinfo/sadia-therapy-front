@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
-import { Adata } from './Adata';
-import styled from 'styled-components';
-import { IconContext } from 'react-icons';
-import { FiPlus, FiMinus } from 'react-icons/fi';
-
+import React, { useState } from "react";
+import { Adata } from "./Adata";
+import styled from "styled-components";
+import { IconContext } from "react-icons";
+import { FiPlus, FiMinus } from "react-icons/fi";
 
 const AccordionSection = styled.div`
   display: flex;
@@ -63,14 +62,14 @@ const Wrap = styled.div`
   text-align: center;
   cursor: pointer;
   h3 {
-    
- display: flex;
-
- height:100px;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    padding-top: 15px;
+    margin-left: 1.5rem;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
-    color:rgb(22, 22, 22)
+    color: rgb(22, 22, 22);
   }
   span {
     margin-right: 1.5rem;
@@ -81,7 +80,8 @@ const Dropdown = styled.div`
   background: #f5f5f5;
   color: rgb(22, 22, 22);
   width: 100%;
-  height: 100px;
+  height: 50px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +98,7 @@ const Dropdown = styled.div`
 const Accordion = () => {
   const [clicked, setClicked] = useState(false);
 
-  const toggle = index => {
+  const toggle = (index) => {
     if (clicked === index) {
       //if clicked question is already active, then close it
       return setClicked(null);
@@ -109,38 +109,39 @@ const Accordion = () => {
 
   return (
     <>
-    
-    <div className='my-5'>
-        <h1 className='text-center faqs'> Question about therapy</h1>
-        <h5 className='text-center'>the most common question</h5>
-        </div>
-    <IconContext.Provider value={{ color: '#b97fb8', size: '25px' }}>
-      <ColumnLeft><div className='container-fluid mb-5'>
-      <div className='row'>
-            <div className='col-10 mx-auto'>
-              <div className='row gy-4'>
-          {Adata.map((item, index) => {
-            return (
-              <>
-                <Wrap onClick={() => toggle(index)} key={index}>
-                  <h3>{item.question}</h3>
-                  <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
-                </Wrap>
-                {clicked === index ? (
-                  <Dropdown>
-                    <p>{item.answere}</p>
-                  </Dropdown>
-                ) : null}
-              </>
-            );
-          })}
-        </div>
-        </div>
-    </div>
-  </div></ColumnLeft>
- 
-      
-    </IconContext.Provider>
+      <div className="my-5">
+        <h2 className="text-center faqs"> Question about therapy</h2>
+        <h5 className="text-center">the most common question</h5>
+      </div>
+      <IconContext.Provider value={{ color: "#b97fb8", size: "25px" }}>
+        <ColumnLeft>
+          <div className="container-fluid mb-5">
+            <div className="row">
+              <div className="col-10 mx-auto">
+                <div className="row gy-4">
+                  {Adata.map((item, index) => {
+                    return (
+                      <>
+                        <Wrap onClick={() => toggle(index)} key={index}>
+                          <h3>{item.question}</h3>
+                          <span>
+                            {clicked === index ? <FiMinus /> : <FiPlus />}
+                          </span>
+                        </Wrap>
+                        {clicked === index ? (
+                          <Dropdown>
+                            <p>{item.answere}</p>
+                          </Dropdown>
+                        ) : null}
+                      </>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </ColumnLeft>
+      </IconContext.Provider>
     </>
   );
 };

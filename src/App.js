@@ -12,20 +12,22 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { SliderData } from "./SliderData";
 import { InfoData } from "./InfoData";
 import BlogSection from "./BlogSection";
+import About from "./About";
 function App() {
   return (
     <>
       <Navbar />
-     
+
       <Routes>
         <Route exact path="/" element={<Home slides={SliderData} />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/Programs" element={<Program />} />
         <Route exact path="/appointment" element={<Appoinment />} />
         <Route exact path="/faq" element={<Accordion />} />
-        <Route exact path="/blogs" element={<BlogSection {...InfoData}/>}/>
+        <Route exact path="/about" element={<About />} />
+        <Route exact path="/blogs" element={<BlogSection {...InfoData} />} />
       </Routes>
-      
+
       <Footer />
     </>
   );

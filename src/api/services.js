@@ -21,5 +21,24 @@ export const GET_FRONT_BLOGS = () => {
 }
 
 export const GET_ALL_BLOG = (pageNumber) => {
-	return axios.get(`${BASE_URL}/all-blogs?page=${pageNumber}`);
+  return axios.get(`${BASE_URL}/all-blogs?page=${pageNumber}`);
+}
+
+export const BLOG_DETAILS = (id) => {
+  return axios.get(`${BASE_URL}/blog/${id}`);
+}
+
+export const GET_FRONT_PROGRAMM = () => {
+	return axios.get(`${BASE_URL}/front-programm`);
+}
+
+export const GET_ALL_PROGRAMM = () => {
+	return axios.get(`${BASE_URL}/all-programm`);
+}
+
+export const PROGRAMM_DETAILS = (id) => {
+	return axios.get(`${BASE_URL}/programm/${id}`);
+}
+export const GET_TESTIMONIAL = () => {
+	return axios.get(`${BASE_URL}/testimonial`);
 }

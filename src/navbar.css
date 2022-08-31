@@ -13,7 +13,7 @@
 }
 
 .navbar a:hover{
-color: rgb(0, 0, 0) !important;
+color: #b97fb8!important;
 }
 .navbar-brand{
   font-family: 'Yesteryear', cursive;
@@ -51,4 +51,7 @@ color: rgb(0, 0, 0) !important;
   border: #b97fb8;
   color: #fff;
   transition: all 0.3s ease;
+}
+.nav-link{
+  font-weight: 600;
 }

@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+
+#about-content{
+    position: relative;
+}
+
+#about-content #img-id{
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.content p {
+    margin-top: 20px;
+    font-family: 'Mukta', sans-serif;
+
+}

@@ -8,7 +8,7 @@ function Navbar() {
       <div className="container-fluid nav_bg">
         <div className="row">
           <div className="col-20 mx-auto">
-            <nav className="navbar navbar-expand-lg navbar-light ">
+            <nav className="navbar fixed-top navbar-expand-lg navbar-light p-md-3 ">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">Sadia Afrin</NavLink>
                 <button
@@ -38,8 +38,18 @@ function Navbar() {
                       </NavLink>
                     </li>
                     <li className="nav-item">
+                      <NavLink className="nav-link" to="/About">
+                        About
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
                       <NavLink className="nav-link" to="/appointment">
                         Appoinment
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/faq">
+                        Faq's
                       </NavLink>
                     </li>
                     <li className="nav-item">

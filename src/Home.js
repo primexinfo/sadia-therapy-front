@@ -106,7 +106,7 @@ function Home({ slides }) {
     const nextSlide = () => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
     };
-    // timeOut.current = setTimeout(nextSlide, 3000)
+    timeOut.current = setTimeout(nextSlide, 5000)
     return function () {
       if (timeOut.current) {
         clearTimeout(timeOut.current);
@@ -158,16 +158,16 @@ function Home({ slides }) {
               </Slide>
             );
           })}
-          <SliderButton>
+          {/* <SliderButton>
             <PrevArrow onClick={prevSlide} />
             <NextArrow onClick={nextSlide} />
-          </SliderButton>
+          </SliderButton> */}
         </Wrapper>
       </section>
       <InfoSection {...InfoData} />
       <View/>
       <Services />
-      <Accordion />
+      {/* <Accordion /> */}
       <Contact />
     </>
   );

@@ -98,7 +98,7 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
                 <div className="section-info">
                   <p dangerouslySetInnerHTML={{ __html: value.sub_title }}></p>
 
-                  <Button className="button" to={"/blogs"}>
+                  <Button className="button" to={`/blog/${value.id}`}>
                     Read More
                   </Button>
                 </div>

@@ -25,7 +25,8 @@ function App() {
         <Route exact path="/appointment" element={<Appoinment />} />
         <Route exact path="/faq" element={<Accordion />} />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/blogs" element={<BlogSection {...InfoData} />} />
+        {/* <Route exact path="/blogs" element={<BlogSection {...InfoData} />} /> */}
+        <Route exact path="/blog/:id" element={<BlogSection {...InfoData} />} />
       </Routes>
 
       <Footer />

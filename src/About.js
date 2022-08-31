@@ -30,7 +30,7 @@ Neuroscience research continues to support the theory behind the use of hypnothe
 
 <strong> My qualification and training:</strong>
 
-<br /> I trained with the prestigious Clifton Practice Hypnotherapy</p>
+<br /> I trained with the prestigious Clifton Practice Hypnotherapy</p> <br /> <br /> 
         </div>
         
       </div>

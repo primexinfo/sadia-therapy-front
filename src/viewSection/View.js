@@ -9,7 +9,7 @@ import { Button } from '../Button';
 
 // import required modules
 
-function View() {
+function View( props) {
   const [people] = useState(Tdata)
   const [index, setIndex] = useState(0)
 

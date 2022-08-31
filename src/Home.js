@@ -11,6 +11,8 @@ import Contact from "./Contact";
 import InfoSection from "./InfoSection";
 import { InfoData } from "./InfoData";
 import View from "./viewSection/View";
+import ClientReview from "./ClientReview";
+import ScrollToTop from "./ScrollToTop";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -131,6 +133,7 @@ function Home({ slides }) {
   }
   return (
     <>
+          <ScrollToTop/>
       <section id="header" className="d-flex align-items-center">
         <Wrapper>
           {slides.map((slide, index) => {
@@ -164,9 +167,11 @@ function Home({ slides }) {
           </SliderButton> */}
         </Wrapper>
       </section>
+      
       <InfoSection {...InfoData} />
       <View/>
       <Services />
+      {/* <ClientReview/> */}
       {/* <Accordion /> */}
       <Contact />
     </>

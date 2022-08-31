@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { FiPlus, FiMinus } from "react-icons/fi";
 import image from "./image/am1.JPG";
+import ScrollToTop from "./ScrollToTop";
 
 const AccordionSection = styled.div`
   display: flex;
@@ -110,6 +111,7 @@ const Accordion = () => {
 
   return (
     <>
+    <ScrollToTop/>
       {" "}
       <div className="section">
         <div className="my-5">

@@ -12,7 +12,7 @@ const Section = styled.div`
   background-color: #f5f5f5;
 `;
 const Conteiner = styled.div`
-  padding: 3rem calc((100vh-1300px) / 2);
+  // padding: 3rem calc((100vh-1300px) / 2);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 800px;
@@ -25,7 +25,8 @@ const ColumnLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 10px;
+  // margin: 10px;
+  background-color:#d3a7d2;
   line-height: 1.4;
   padding: 1rem 2rem;
   order: ${({ reverse }) => (reverse ? "2" : "1")} h1 {
@@ -82,7 +83,7 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
               Read More
             </Button>
           </div> */}
-          <h2 className="text-center my-therapy"> Explore my therapy</h2>
+          <h2 className="text-center my-therapy "> Explore my therapy</h2>
           {frontBlog.map((value) => {
             return (
               <div className="blog-margin">

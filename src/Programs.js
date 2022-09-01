@@ -4,15 +4,15 @@ import Sdata from "./Sdata";
 import axios from 'axios'
 import { api, IMG_BASE_URL } from "./api/api";
 
-function Program() {
-  const [program, setProgram] = useState([]);
+function Programs() {
+  const [program, setAllProgram] = useState([]);
 
   useEffect(() => {
     axios
-      .get(api.frontProgramm)
+      .get(api.allProgramm)
       .then((res) => {
-        console.log(res.data);
-        setProgram(res.data);
+        console.log(res.data.data);
+        setAllProgram(res.data.data);
       })
       .catch((err) => {
         console.log(err);
@@ -39,4 +39,4 @@ function Program() {
   );
 }
 
-export default Program;
+export default Programs;

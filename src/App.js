@@ -13,6 +13,8 @@ import { SliderData } from "./SliderData";
 import { InfoData } from "./InfoData";
 import BlogSection from "./BlogSection";
 import About from "./About";
+import AllBlogs from "./AllBlogs";
+import Programs from "./Programs";
 function App() {
   return (
     <>
@@ -21,10 +23,11 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home slides={SliderData} />} />
         <Route exact path="/contact" element={<Contact />} />
-        <Route exact path="/Programs" element={<Program />} />
+        <Route exact path="/Programs" element={<Programs/>} />
         <Route exact path="/appointment" element={<Appoinment />} />
         <Route exact path="/faq" element={<Accordion />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/blogs" element={<AllBlogs />} />
         {/* <Route exact path="/blogs" element={<BlogSection {...InfoData} />} /> */}
         <Route exact path="/blog/:id" element={<BlogSection {...InfoData} />} />
       </Routes>

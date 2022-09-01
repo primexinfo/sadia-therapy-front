@@ -35,7 +35,7 @@ const Appoinment = () => {
   return (
     <>
       {/* <LocalizationProvider dateAdapter={AdapterDayjs}> */}
-      <div className="modal-content">
+      <div className="modal-content anim">
         <div className="modal-header ">
           <h5 className="modal-title" id="modalRequestLabel">
             Make an Appointment

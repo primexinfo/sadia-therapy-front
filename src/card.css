@@ -13,3 +13,11 @@
   text-decoration: none;
   animation-delay: 0.6s;
 }
+.card-img-top{
+  height: 290px;
+}
+.card-body{
+  background-color: #d3a7d2;
+  
+  
+}

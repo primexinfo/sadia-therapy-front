@@ -113,7 +113,7 @@ const Accordion = () => {
     <>
     <ScrollToTop/>
       {" "}
-      <div className="section">
+      <div className="section anim">
         <div className="my-5">
           <h2 className=" pt-5 text-center faqs"> Frequently Asked Question</h2>
           <h5 className=" text-center">the most common question</h5>

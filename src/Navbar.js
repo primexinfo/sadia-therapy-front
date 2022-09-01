@@ -5,7 +5,7 @@ import { FaPhone} from 'react-icons/fa'
 function Navbar() {
   return (
     <>
-      <div className="container-fluid nav_bg">
+      <div className="container-fluid nav_bg ">
         <div className="row">
           <div className="col-20 mx-auto">
             <nav className="navbar fixed-top navbar-expand-lg navbar-light p-md-3 ">
@@ -35,6 +35,11 @@ function Navbar() {
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/Programs">
                         Programs
+                      </NavLink>
+                    </li>
+                    <li className="nav-item">
+                      <NavLink className="nav-link" to="/blogs">
+                        Blog
                       </NavLink>
                     </li>
                     <li className="nav-item">

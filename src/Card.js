@@ -11,7 +11,7 @@ const Card = (props) => {
               <img src={props.imgsrc} className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title">{props.title}</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <p className="card-text text-justify" dangerouslySetInnerHTML={{__html:props.details}} ></p>
                   <a href="#" className="button">Read more</a>
                 </div>
             </div>

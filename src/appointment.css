@@ -4,7 +4,8 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
- 
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
@@ -23,6 +24,7 @@
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-top: 3rem;
     padding: 1rem;
     border-bottom: 1px solid #e9ecef;
     border-top-left-radius: 0.3rem;
@@ -39,6 +41,7 @@
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     padding: 1rem;
+    width: 40%;
 }
 .form-group{
     margin-bottom: 1rem;

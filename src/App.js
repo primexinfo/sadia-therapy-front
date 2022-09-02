@@ -15,6 +15,7 @@ import BlogSection from "./BlogSection";
 import About from "./About";
 import AllBlogs from "./AllBlogs";
 import Programs from "./Programs";
+import ProgramSection from "./ProgramSection";
 function App() {
   return (
     <>
@@ -29,7 +30,8 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route exact path="/blogs" element={<AllBlogs />} />
         {/* <Route exact path="/blogs" element={<BlogSection {...InfoData} />} /> */}
-        <Route exact path="/blog/:id" element={<BlogSection {...InfoData} />} />
+        <Route exact path="/blog/:id" element={<BlogSection />} />
+        <Route exact path="/program/:id" element={<ProgramSection />} />
       </Routes>
 
       <Footer />

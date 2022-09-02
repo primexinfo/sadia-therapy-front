@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from "react";
-import Card from "./Card";
+import ProgramCard from "./ProgramCard";
 import Sdata from "./Sdata";
 import axios from 'axios'
 import { api, IMG_BASE_URL } from "./api/api";
@@ -29,7 +29,7 @@ function Programs() {
           <div className="col-10 mx-auto">
             <div className="row gy-4">
               {program.map((val, ind) => {
-                return <Card key={ind} imgsrc={`${IMG_BASE_URL}/services/${val.photo}`} title={val.title} details={val.sub_title} />;
+                return <ProgramCard key={ind} imgsrc={`${IMG_BASE_URL}/services/${val.photo}`} title={val.title} details={val.sub_title} />;
               })}
             </div>
           </div>

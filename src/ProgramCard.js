@@ -1,9 +1,19 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import web  from '../src/image/service1.jpg'
 import { NavLink } from 'react-router-dom'
 import './card.css'
 
-const Card = (props) => {
+const ProgramCard = (props) => {
+  // useEffect(() => {
+  //   axios
+  //     .get(api.frontBlogs)
+  //     .then((res) => {
+  //       setFrontBlog(res.data);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, []);
   return <>
  
           <div className='col-md-4 col-10 mx-auto'>
@@ -20,4 +30,4 @@ const Card = (props) => {
   </>
 }
 
-export default Card
+export default ProgramCard

@@ -1,8 +1,9 @@
 import React,{useEffect, useState} from "react";
-import Card from "./Card";
+import BlogsCard from "./BlogsCard";
 import Sdata from "./Sdata";
 import axios from 'axios'
 import { api, IMG_BASE_URL } from "./api/api";
+import { Button } from "./Button";
 
 function AllBlogs() {
   const [program, setAllProgram] = useState([]);
@@ -28,8 +29,14 @@ function AllBlogs() {
           <div className="col-10 mx-auto">
             <div className="row gy-4">
               {program.map((val, ind) => {
-                return <Card key={ind} imgsrc={`${IMG_BASE_URL}/blogs/${val.photo}`} title={val.title} details={val.sub_title} />;
-              })}
+                return <>
+                 <BlogsCard key={ind} imgsrc={`${IMG_BASE_URL}/blogs/${val.photo}`} title={val.title} details={val.sub_title} />;
+             
+              <Button className="button" to={`/blog/${val.id}`} >
+                read more
+              </Button> 
+            </>
+            })}
             </div>
           </div>
         </div>

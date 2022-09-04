@@ -22,7 +22,7 @@ const ProgramCard = (props) => {
                 <div className="card-body">
                   <h5 className="card-title">{props.title}</h5>
                   <p className="card-text text-justify" dangerouslySetInnerHTML={{__html:props.details}} ></p>
-                  <a href="#" className="button">Read more</a>
+                  <a href={props.id} className="button">Read more</a>
                 </div>
             </div>
           </div>

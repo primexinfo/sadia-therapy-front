@@ -29,7 +29,7 @@ function Program() {
           <div className="col-10 mx-auto">
             <div className="row gy-4">
               {program.map((val, ind) => {
-                return <ProgramCard key={ind} imgsrc={`${IMG_BASE_URL}/services/${val.photo}`} title={val.title} details={val.sub_title} />;
+                return <ProgramCard key={ind} imgsrc={`${IMG_BASE_URL}/services/${val.photo}`} title={val.title} details={val.sub_title} id={`/program/${val.id}`} />;
               })}
             </div>
           </div>

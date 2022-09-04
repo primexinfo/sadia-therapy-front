@@ -21,7 +21,7 @@ function Programs() {
   return (
     <>
       <div className="my-5">
-        <h1 className="text-center service-text-h"> need a solution</h1>
+        <h1 className=" p-5 text-center service-text-h"> need a solution</h1>
         <p className="text-center service-text-p">explore my programs</p>
       </div>
       <div className="container-fluid mb-5">
@@ -29,7 +29,7 @@ function Programs() {
           <div className="col-10 mx-auto">
             <div className="row gy-4">
               {program.map((val, ind) => {
-                return <ProgramCard key={ind} imgsrc={`${IMG_BASE_URL}/services/${val.photo}`} title={val.title} details={val.sub_title} />;
+                return <ProgramCard key={ind} imgsrc={`${IMG_BASE_URL}/services/${val.photo}`} title={val.title} details={val.sub_title} id={`/program/${val.id}`} />;
               })}
             </div>
           </div>

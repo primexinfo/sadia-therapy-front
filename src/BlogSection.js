@@ -88,7 +88,7 @@ const BlogSection = () => {
          
                    <div className="blog-wrap">
                     <header>
-              <p className="pt-5 blog-date">Published {blog.created_at} </p>
+              <p className="pt-5 blog-date"> {`Published ${blog.created_at}`} </p>
               <h1>{blog.title}</h1>
             </header>
             <img

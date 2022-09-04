@@ -14,7 +14,7 @@ const ProgramSection = () => {
   const [program, setProgram] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://www.admin.sadiatherapy.com/api/program/${id}`).then((res) => {
+    axios.get(`https://www.admin.sadiatherapy.com/api/programm/${id}`).then((res) => {
       
    
         setProgram(res.data);
@@ -34,7 +34,7 @@ const ProgramSection = () => {
               <h1>{program.title}</h1>
             </header>
             <img
-              src={`${IMG_BASE_URL}/blogs/${program.photo}`}
+              src={`${IMG_BASE_URL}/services/${program.photo}`}
               alt="cover"
             />
             <p className="blog-desc"  dangerouslySetInnerHTML={{ __html: program.details }}>

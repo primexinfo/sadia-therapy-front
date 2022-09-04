@@ -29,13 +29,8 @@ function AllBlogs() {
           <div className="col-10 mx-auto">
             <div className="row gy-4">
               {program.map((val, ind) => {
-                return <>
-                 <BlogsCard key={ind} imgsrc={`${IMG_BASE_URL}/blogs/${val.photo}`} title={val.title} details={val.sub_title} />;
-             
-              <Button className="button" to={`/blog/${val.id}`} >
-                read more
-              </Button> 
-            </>
+                return <BlogsCard key={ind} imgsrc={`${IMG_BASE_URL}/blogs/${val.photo}`} title={val.title} details={val.sub_title} id={`/blog/${val.id}`} />;
+            
             })}
             </div>
           </div>

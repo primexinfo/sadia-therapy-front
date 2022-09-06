@@ -83,12 +83,12 @@ article h4{
     margin: 10px;
 }
 
-.text {
+/* .text {
     max-width: 35em;
     margin: 0 auto;
     margin-top: 2rem;
     line-height: 2;
-}
+} */
 .next,
 .prev {
     position: absolute;

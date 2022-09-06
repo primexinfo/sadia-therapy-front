@@ -20,41 +20,6 @@ const Conteiner = styled.div`
     grid-template-columns: 1fr;
   }
 `;
-const ColumnLeft = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  // margin: 10px;
-  background-color:#d3a7d2;
-  line-height: 1.4;
-  padding: 1rem 2rem;
-  order: ${({ reverse }) => (reverse ? "2" : "1")} h1 {
-    margin-bottom: 1rem;
-    font-size: calc(1.5rem, 6vw, 2rem);
-  }
-  p {
-    margin-bottom: 2rem;
-  }
-`;
-
-const ColumnRigth = styled.div`
-padding: 0rem 0rem;
-order: ${({ reverse }) => (reverse ? "1" : "2")};
-display: flex;
-justify-content: center;
-align-items: center;
-@media screen and (max-width:768px){
-    order: ${({ reverse }) => (reverse ? "2" : "1")};
-}
-img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-@media screen and (max-width:768px){
-    width:90%;
-    height:90%
-}`;
 
 const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
   const [frontBlog, setFrontBlog] = useState([]);
@@ -71,32 +36,23 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
   }, []);
 
   return (
-    <Section>
-      <Conteiner>
-        <ColumnLeft>
-          {/* <div className="blog-margin">
-            <h3 className="text-center my-therapy"> Explore my therapy</h3>
-            <img className="person-img" src={image} alt="" />
-            <h1>{heading}</h1>
-            <p>{peragraphOne}</p>
-            <Button className="button" to={"/blogs"}>
-              Read More
-            </Button>
-          </div> */}
-          <h2 className="text-center my-therapy "> Explore my therapy</h2>
+    <Section className="">
+      <div className="row">
+        <div className="col-md-7">
+          <h2 className="text-center my-therapy ">Explore my therapy</h2>
           {frontBlog.map((value) => {
             return (
-              <div className="blog-margin">
-                <div className="blog-section">
+              <div className="row">
+                <div className="col-md-3">
                   <img
-                    className="person-img"
+                    className="person-img img-fluid"
                     to={"/blogs"}
                     src={`${IMG_BASE_URL}/blogs/${value.photo}`}
                     alt=""
                   />
-                  <h1>{value.title}</h1>
                 </div>
-                <div className="section-info">
+                <div className="col-md-9">
+                  <h2>{value.title}</h2>
                   <p dangerouslySetInnerHTML={{ __html: value.sub_title }}></p>
 
                   <Button className="button" to={`/blog/${value.id}`}>
@@ -106,12 +62,12 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
               </div>
             );
           })}
-        </ColumnLeft>
+        </div>
 
-        <ColumnRigth reverse={reverse}>
-          <img src={image} alt="" />
-        </ColumnRigth>
-      </Conteiner>
+        <div className="col-md-5">
+          <img src={image} alt="" className="img-fluid" />
+        </div>
+      </div>
     </Section>
   );
 };

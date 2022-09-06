@@ -20,7 +20,7 @@ body{
 
 }
 #header h1 {
-  margin: 50px 50px 0px 0px;
+  margin: 50px 50px -25px 0px;
   font-size: 48px;
   font-weight: 700;
   color: #fff;
@@ -52,7 +52,7 @@ body{
     line-height: 100px;
     letter-spacing: 0px;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 4rem;
     border-color: rgb(99, 115, 117);
     border-style: none;
     
@@ -147,18 +147,16 @@ label{
 .contact{
   position: relative;
   min-height: 100vh;
-  padding: 28px 50px;
+  padding: 25px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .contact .content{
-  max-width: 800px;
   text-align: center;
 }
 .contact .content h2{
-  
   font-family: 'Yesteryear', cursive;
   font-size: 36px;
   font-weight: 500;
@@ -362,15 +360,10 @@ padding: 0 15px;
   color: #070707;
   background-color: #b97fb8;
 }
-@media(max-width:767px){
+@media(max-width:768px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
-  }
-}
-@media(max-width:767px){
-  .footer-col{
-    width: 100%;
   }
 }
 .heading h1 {

@@ -6,8 +6,8 @@ import './card.css'
 const BlogsCard = (props) => {
   return <>
  
-          <div className='col-md-4 col-10 mx-auto'>
-          <div className="card anim">
+          <div className='col-md-4 mx-auto mb-3'>
+            <div className="card anim">
               <img src={props.imgsrc} className="card-img-top" alt="..."/>
                 <div className="card-body">
                   <h5 className="card-title">{props.title}</h5>

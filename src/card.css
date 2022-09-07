@@ -14,10 +14,8 @@
   animation-delay: 0.6s;
 }
 .card-img-top{
-  height: 290px;
+  height: 200px;
 }
 .card-body{
-  background-color: #d3a7d2;
-  
-  
+  background-color: #d4b5d357;
 }

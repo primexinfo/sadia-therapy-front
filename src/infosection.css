@@ -1,21 +1,64 @@
 .single-blog{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .blog-margin{
-    
     margin-bottom: 3rem;
     border-bottom: 1px;
 }
+.hero-title{
+    color: #b97fb8;
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+    font-family: YesterYear;
+}
+.blog-title{
+    /*color: #b97fb8;*/
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 .blog-section{
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
 }
 .blog-section h1{
-  margin-left: 3rem;
+    margin-left: 3rem;
 }
 .section-info{
-  padding-left: 2rem;
+    padding-left: 2rem;
+    /*padding-bottom: 2rem;*/
+}
+.send-button{
+    background-color: #b97fb8;
+    color: #ffffff;
+}
+.contact-text{
+    padding-left: 100px;
+}
+.contact-text-phone{
+    margin-right: 30px;
+}
+.fa{
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display,inline-block);
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1.5;
+    text-rendering: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .section-info{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem
+    }
+    .contact-text{
+        padding-left: 13px;
+    }
+    .contact-text-phone{
+        margin-right: 10px;
+    }
 }

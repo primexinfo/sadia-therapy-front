@@ -6,11 +6,7 @@ import axios from "axios";
 import "./infosection.css";
 import { Link } from "react-router-dom";
 import { api, IMG_BASE_URL } from "./api/api";
-const Section = styled.div`
-  width: 100%;
-  height: 90%;
-  background-color: #f5f5f5;
-`;
+
 const Conteiner = styled.div`
   // padding: 3rem calc((100vh-1300px) / 2);
   display: grid;
@@ -36,13 +32,13 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
   }, []);
 
   return (
-    <Section className="">
+    <section className="section-info">
       <div className="row">
-        <div className="col-md-7">
-          <h2 className="text-center my-therapy ">Explore my therapy</h2>
+        <div className="col-md-6">
+          <h2 className="text-center my-therapy hero-title">Explore my therapy</h2>
           {frontBlog.map((value) => {
             return (
-              <div className="row">
+              <div className="row mb-3">
                 <div className="col-md-3">
                   <img
                     className="person-img img-fluid"
@@ -51,8 +47,8 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
                     alt=""
                   />
                 </div>
-                <div className="col-md-9">
-                  <h2>{value.title}</h2>
+                <div className="col-md-9 pr-2">
+                  <h2 className="blog-title">{value.title}</h2>
                   <p dangerouslySetInnerHTML={{ __html: value.sub_title }}></p>
 
                   <Button className="button" to={`/blog/${value.id}`}>
@@ -64,11 +60,11 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
           })}
         </div>
 
-        <div className="col-md-5">
+        <div className="col-md-6 pr-2">
           <img src={image} alt="" className="img-fluid" />
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

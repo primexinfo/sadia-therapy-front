@@ -288,9 +288,7 @@ transform: translateY(-20px);
 .footer{
   background: rgba(0, 0, 0, 0);
   backdrop-filter: blur(15px);
- 
-  
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
 .footer .footerContainer{
@@ -360,10 +358,36 @@ padding: 0 15px;
   color: #070707;
   background-color: #b97fb8;
 }
+.social-links{
+  margin-left: 15px;
+}
 @media(max-width:768px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
+  }
+  .footer{
+    padding: 0px 0px;
+  }
+  .footer-follow{
+    width: 100%;
+  }
+  .homePage-title{
+    font-size: 2rem;
+    width: auto;
+    margin-bottom: -0.8rem;
+  }
+  .menu-line-height{
+    line-height: 6px;
+    background-color: #e3e2e2;
+    padding: 13px;
+    text-align: right;
+    width: 120px;
+    border-radius: 5px;
+  }
+  #header h1 {
+    margin: 50px 50px -58px 0px;
+    font-size: 27px;
   }
 }
 .heading h1 {

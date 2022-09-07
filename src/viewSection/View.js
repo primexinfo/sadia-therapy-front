@@ -35,7 +35,7 @@ function View( props) {
   
   <section className='section'>
     <div className="title">
-      <h2>How my therapy work</h2>
+      <h2 className="hero-title">How my therapy work</h2>
     </div>
     <div className="section-center">
       {people.map((item, key)=>{

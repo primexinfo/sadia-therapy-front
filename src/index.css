@@ -546,4 +546,8 @@ section{
   .service-text-h{
     font-size: 30px;
   }
+  .navbar-light .navbar-toggler {
+    color: #cb02c7 !important;
+    border-color: #cb02c7 !important;
+  }
 }

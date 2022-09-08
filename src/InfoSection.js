@@ -41,7 +41,7 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
               <div className="row mb-3">
                 <div className="col-md-3">
                   <img
-                    className="person-img img-fluid"
+                    className="person-img"
                     to={"/blogs"}
                     src={`${IMG_BASE_URL}/blogs/${value.photo}`}
                     alt=""

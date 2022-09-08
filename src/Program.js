@@ -21,7 +21,7 @@ function Program() {
   }, []);
   return (
     <>
-      <section className="section mb-5 pb-5">
+      <section className="section mb-5 pb-2">
           <div className="container">
               <div className="row">
                   <div className="col-12">

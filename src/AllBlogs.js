@@ -1,9 +1,7 @@
 import React,{useEffect, useState} from "react";
 import BlogsCard from "./BlogsCard";
-import Sdata from "./Sdata";
 import axios from 'axios'
 import { api, IMG_BASE_URL } from "./api/api";
-import { Button } from "./Button";
 
 function AllBlogs() {
   const [program, setAllProgram] = useState([]);
@@ -12,7 +10,6 @@ function AllBlogs() {
     axios
       .get(api.allBlog)
       .then((res) => {
-        console.log(res.data.data);
         setAllProgram(res.data.data);
       })
       .catch((err) => {
@@ -21,15 +18,17 @@ function AllBlogs() {
   }, []);
   return (
     <>
-      <div className="my-5">
-        <h1 className="p-5 text-center service-text-h"> Know more about the Therapy </h1>
-      </div>
-      <div className="container-fluid mb-5">
-        <div className="row">
-              {program.map((val, ind) => {
-                return <BlogsCard key={ind} imgsrc={`${IMG_BASE_URL}/blogs/${val.photo}`} title={val.title} details={val.sub_title} id={`/blog/${val.id}`} />;
-            
-            })}
+      <div className="container">
+        <div className="my-5">
+          <h1 className="pt-5 text-center service-text-h"> Know more about the Therapy </h1>
+        </div>
+        <div className="container-fluid mb-5">
+          <div className="row">
+                {program.map((val, ind) => {
+                  return <BlogsCard key={ind} imgsrc={`${IMG_BASE_URL}/blogs/${val.photo}`} title={val.title} details={val.sub_title} id={`/blog/${val.id}`} />;
+              
+              })}
+          </div>
         </div>
       </div>
     </>

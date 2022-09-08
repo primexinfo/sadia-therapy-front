@@ -16,7 +16,7 @@ const ProgramCard = (props) => {
   // }, []);
   return <>
  
-          <div className='col-md-4 mx-auto mb-3'>
+          <div className='col-md-3 mx-auto mb-3'>
             <div className="card anim">
               <img src={props.imgsrc} className="card-img-top" alt="..."/>
                 <div className="card-body">

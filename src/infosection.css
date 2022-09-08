@@ -43,6 +43,7 @@
 .fa{
     -webkit-font-smoothing: antialiased;
     display: var(--fa-display,inline-block);
+    font-size: 39px;
     font-style: normal;
     font-variant: normal;
     line-height: 1.5;

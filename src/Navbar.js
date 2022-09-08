@@ -7,7 +7,7 @@ function Navbar() {
     <>
       <div className="container-fluid nav_bg ">
         <div className="row">
-          <div className="col-20 mx-auto">
+          <div className="col-12 mx-auto">
             <nav className="navbar fixed-top navbar-expand-lg navbar-light p-md-3 ">
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">Sadia Afrin</NavLink>
@@ -66,7 +66,7 @@ function Navbar() {
                 
                 </div>  
               </div>
-              <a href="tel:01775970162" className="contact-button"><FaPhone/></a>
+              {/* <a href="tel:01775970162" className="contact-button"><FaPhone/></a> */}
             </nav>
           </div>
         </div>

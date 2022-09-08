@@ -35,7 +35,7 @@ const Appoinment = () => {
   return (
     <>
       {/* <LocalizationProvider dateAdapter={AdapterDayjs}> */}
-      <div className="modal-content anim">
+      <div className="modal-content anim mb-4">
         <div className="modal-header ">
           <h5 className="modal-title" id="modalRequestLabel">
             Make an Appointment
@@ -76,9 +76,9 @@ const Appoinment = () => {
               />
             </div>
 
-            <div className="row">
-              <div className="col-md-6">
-                <div className="form-group">
+            <div className="form-group">
+              <div className="row">
+                <div className="col-md-6 col-sm-4">
                   <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <KeyboardDatePicker
                       disableToolbar
@@ -94,9 +94,7 @@ const Appoinment = () => {
                     />
                   </MuiPickersUtilsProvider>
                 </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group">
+                <div className="col-md-6 col-sm-4">
                   <MuiPickersUtilsProvider utils={DateFnsUtils}>
                     <KeyboardTimePicker
                       margin="normal"

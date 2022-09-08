@@ -10,7 +10,7 @@ const BlogsCard = (props) => {
             <div className="card anim">
               <img src={props.imgsrc} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                  <h4 className="card-title -bold">{props.title}</h4>
+                  <h4 className="card-title -bold"><strong>{props.title}</strong></h4>
                   <p className="card-text text-justify" dangerouslySetInnerHTML={{__html:props.details}} ></p>
                   <a href={props.id} className="button">Read more</a>
                 </div>

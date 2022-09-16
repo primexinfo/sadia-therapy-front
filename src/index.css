@@ -152,6 +152,9 @@ label{
   align-items: center;
   flex-direction: column;
 }
+.contact-section{
+  margin-top: 5rem !important; 
+}
 .contact .content{
   text-align: center;
 }
@@ -550,4 +553,7 @@ section{
     color: #cb02c7 !important;
     border-color: #cb02c7 !important;
   }
+}
+.faq-section{
+  margin-top: 5rem !important;
 }

@@ -24,6 +24,7 @@
     "dayjs": "^1.11.4",
     "moment": "^2.29.4",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.5.0",
     "react-datepicker": "^4.8.0",
     "react-dater": "^1.6.0",
     "react-datetime-bootstrap": "^1.4.7",

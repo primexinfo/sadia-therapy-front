@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import axios from "axios";
+import { api, IMG_BASE_URL } from "./api/api";
 import "./navbar.css";
-import { FaPhone} from 'react-icons/fa'
+import { NavDropdown } from "react-bootstrap";
+import { FaPhone } from "react-icons/fa";
 function Navbar() {
+  const [program, setAllProgram] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(api.allProgramm)
+      .then((res) => {
+        console.log(res.data.data);
+        setAllProgram(res.data.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  const [show, setShow] = useState(false);
+  const showDropdown = (e) => {
+    setShow(!show);
+  };
+  const hideDropdown = (e) => {
+    setShow(false);
+  };
   return (
     <>
       <div className="container-fluid nav_bg ">
@@ -10,7 +33,9 @@ function Navbar() {
           <div className="col-12 mx-auto">
             <nav className="navbar fixed-top navbar-expand-lg navbar-light p-md-3 ">
               <div className="container-fluid">
-                <NavLink className="navbar-brand" to="/">Sadia Afrin</NavLink>
+                <NavLink className="navbar-brand" to="/">
+                  Sadia Afrin
+                </NavLink>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -27,32 +52,51 @@ function Navbar() {
                   id="navbarNavDropdown"
                 >
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0 menu-line-height">
-                    <li className="nav-item">
+                    <li className="nav-item mr-2">
                       <NavLink className="nav-link" aria-current="page" to="/">
                         Home
                       </NavLink>
                     </li>
-                    <li className="nav-item">
-                      <NavLink className="nav-link" to="/Programs">
-                        Programs
-                      </NavLink>
+                    <li className="nav-item dropdown mr-2">
+                      {/* <NavLink className="nav-link dropdown-toggle" data-toggle="dropdown" to="/Programs"> */}
+
+                      <NavDropdown
+                        title="Programs"
+                        id="collasible-nav-dropdown nav-link"
+                        show={show}
+                        onMouseEnter={showDropdown}
+                        onMouseLeave={hideDropdown}
+                      >
+                        {program.map((val, ind) => {
+                          return (
+                            <>
+                              <NavDropdown.Item href={`/program/${val.id}`}>
+                                {val.title}
+                              </NavDropdown.Item>
+                              <NavDropdown.Divider />
+                            </>
+                          );
+                        })}
+                      </NavDropdown>
+
+                      {/* </NavLink> */}
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item mr-2 ">
                       <NavLink className="nav-link" to="/blogs">
                         Blog
                       </NavLink>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/About">
                         About
                       </NavLink>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/appointment">
                         Appoinment
                       </NavLink>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/faq">
                         Faq's
                       </NavLink>
@@ -63,8 +107,7 @@ function Navbar() {
                       </NavLink>
                     </li>
                   </ul>
-                
-                </div>  
+                </div>
               </div>
               {/* <a href="tel:01775970162" className="contact-button"><FaPhone/></a> */}
             </nav>

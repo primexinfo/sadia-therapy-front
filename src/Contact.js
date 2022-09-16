@@ -6,7 +6,7 @@ import{faAt} from '@fortawesome/free-solid-svg-icons'
 import './infosection.css'
 function Contact() {
   return<>
-	  <section className="section p-3">
+	  <section className=" section contact-section">
 		  <div className='container'>
 			<div className="row">
 				<div className="col-12 text-center mb-2">

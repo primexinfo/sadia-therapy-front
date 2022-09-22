@@ -17,13 +17,18 @@ const ProgramCard = (props) => {
   return <>
  
           <div className='col-md-3 mx-auto mb-3'>
-            <div className="card anim">
-              <img src={props.imgsrc} className="card-img-top" alt="..."/>
+            <div className='inner'>
+            <div className="h-100 card shadow anim">
+              
+                 <img src={props.imgsrc} className="card-img-top" alt="..."/>
+             
+             
                 <div className="card-body">
                   <h5 className="card-title"><strong>{props.title}</strong></h5>
                   <p className="card-text text-justify" dangerouslySetInnerHTML={{__html:props.details}} ></p>
                   <a href={props.id} className="button">Read more</a>
                 </div>
+            </div> 
             </div>
           </div>
        

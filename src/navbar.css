@@ -8,8 +8,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: transparent;
 }
-
+/* .navbar.active{
+  background-color: rgb(255, 252, 252);
+} */
 .nav-item a:hover {
   color: #fff !important;
   padding: 5px 10px !important;
@@ -71,4 +74,5 @@
   padding: 3px 10px !important;
   background: #b97fb8 !important;
   border-radius: 5px;
+  margin-right: 10px;
 }

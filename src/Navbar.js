@@ -7,6 +7,7 @@ import { NavDropdown } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
 function Navbar() {
   const [program, setAllProgram] = useState([]);
+  const [navbar, setNavbar] = useState(false)
 
   useEffect(() => {
     axios
@@ -26,12 +27,21 @@ function Navbar() {
   const hideDropdown = (e) => {
     setShow(false);
   };
+  const changeBackground= ()=>{
+if(window.scrollY>= 20){
+  setNavbar(true)
+}
+else{
+  setNavbar(false)
+}
+  }
+  window.addEventListener('scroll', changeBackground)
   return (
     <>
       <div className="container-fluid nav_bg ">
         <div className="row">
           <div className="col-12 mx-auto">
-            <nav className="navbar fixed-top navbar-expand-lg navbar-light p-md-3 ">
+            <nav className={navbar?"navbar fixed-top navbar-expand-lg navbar-light p-md-3 active":"navbar fixed-top navbar-expand-lg navbar-light p-md-3 "}>
               <div className="container-fluid">
                 <NavLink className="navbar-brand" to="/">
                   Sadia Afrin

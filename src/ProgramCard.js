@@ -16,7 +16,7 @@ const ProgramCard = (props) => {
   // }, []);
   return <>
  
-          <div className='col-md-3 mx-auto mb-3'>
+          <div className='col-md-3 mx-auto mb-3 padding'>
             <div className='inner'>
             <div className="h-100 card shadow anim">
               

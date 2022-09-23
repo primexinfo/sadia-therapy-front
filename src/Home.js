@@ -125,7 +125,7 @@ function Home({ slides }) {
                     <Content>
                       <h1 className="homePage-title common">{slide.common}</h1>
                       <h3 className="homePage-title">{slide.title}</h3>
-                      <Button className="button" to={'/contact'}>
+                      <Button className="home-button" to={'/contact'}>
                         {slide.lavel}
                       </Button>
                     </Content>

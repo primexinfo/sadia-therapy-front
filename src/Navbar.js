@@ -41,8 +41,8 @@ else{
       <div className="container-fluid nav_bg ">
         <div className="row">
           <div className="col-12 mx-auto">
-            <nav className={navbar?"navbar fixed-top navbar-expand-lg navbar-light p-md-3 active":"navbar fixed-top navbar-expand-lg navbar-light p-md-3 "}>
-              <div className="container-fluid">
+            <nav className={navbar?"navbar sticky-top navbar-expand-lg navbar-light p-md-3 active":"navbar  navbar-expand-lg navbar-light p-md-3 "}>
+              <div className="container-fluid ">
                 <NavLink className="navbar-brand" to="/">
                   Sadia Afrin
                 </NavLink>
@@ -67,10 +67,16 @@ else{
                         Home
                       </NavLink>
                     </li>
+                    <li className="nav-item mr-2">
+                      <NavLink className="nav-link" to="/About">
+                        About
+                      </NavLink>
+                    </li>
                     <li className="nav-item dropdown mr-2">
                       {/* <NavLink className="nav-link dropdown-toggle" data-toggle="dropdown" to="/Programs"> */}
 
                       <NavDropdown
+                     
                         title="Programs"
                         id="collasible-nav-dropdown nav-link"
                         show={show}
@@ -80,10 +86,11 @@ else{
                         {program.map((val, ind) => {
                           return (
                             <>
-                              <NavDropdown.Item href={`/program/${val.id}`}>
+                              <NavDropdown.Item className="prog" href={`/program/${val.id}`}>
                                 {val.title}
+                                <NavDropdown.Divider />
                               </NavDropdown.Item>
-                              <NavDropdown.Divider />
+                              
                             </>
                           );
                         })}
@@ -96,9 +103,9 @@ else{
                         Blog
                       </NavLink>
                     </li>
-                    <li className="nav-item mr-2">
-                      <NavLink className="nav-link" to="/About">
-                        About
+                    <li className="nav-item mr-5">
+                      <NavLink className="nav-link" to="/faq">
+                        Faq's
                       </NavLink>
                     </li>
                     <li className="nav-item mr-2">
@@ -106,11 +113,7 @@ else{
                         Appoinment
                       </NavLink>
                     </li>
-                    <li className="nav-item mr-2">
-                      <NavLink className="nav-link" to="/faq">
-                        Faq's
-                      </NavLink>
-                    </li>
+                    
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/contact">
                         Contact

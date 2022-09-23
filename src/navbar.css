@@ -11,14 +11,16 @@
   background: transparent;
 }
 /* .navbar.active{
+
   background-color: rgb(255, 252, 252);
 } */
 .nav-item a:hover {
   color: #fff !important;
-  padding: 5px 10px !important;
+  /* padding: 5px 8px !important; */
   background: #b97fb8 !important;
-  border-radius: 5px;
+  border-radius: 2px;
 }
+
 .navbar-brand {
   font-family: "Yesteryear", cursive;
   font-size: 1.8em;
@@ -59,20 +61,21 @@
 .nav-link {
   font-weight: 600;
   color: #b97fb8 !important;
+  margin-right: 10px;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
   /* color: rgb(140, 103, 226) !important; */
 
   color: #fff !important;
-  padding: 5px 8px !important;
+  
   background: #b97fb8 !important;
-  border-radius: 5px;
+  border-radius: 2px;
 }
-#nav-link.active {
+/* #nav-link.active {
   color: #fff !important;
   padding: 3px 10px !important;
   background: #b97fb8 !important;
   border-radius: 5px;
   margin-right: 10px;
-}
+} */

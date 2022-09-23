@@ -18,7 +18,7 @@
 }
 .card-body{
   background-color: #d4b5d357;
-
+  
 }
 .inner{
   overflow: hidden;
@@ -34,4 +34,10 @@
 }
 .inner:hover{
   transform: scale(1.1);
+}
+.card-text{
+  height: 150px;
+}
+.padding{
+  padding: 1.8px;
 }

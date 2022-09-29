@@ -33,7 +33,7 @@ const ProgramSection = () => {
               <p className="pt-5 blog-date">Published {program.created_at} </p>
               <h1>{program.title}</h1>
             </header>
-            <img
+            <img className="shadow prog-img"
               src={`${IMG_BASE_URL}/services/${program.photo}`}
               alt="cover"
             />

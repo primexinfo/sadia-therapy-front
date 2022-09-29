@@ -23,6 +23,7 @@ const Appoinment = () => {
     setTime(date);
   };
   function saveAppointment(e) {
+    
     e.preventDefault();
     let data = { appointment_name, phone, appointment_date, appointment_time };
     axios.post(`${BASE_URL}/set-appoint`, data)

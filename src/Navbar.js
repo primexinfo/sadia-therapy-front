@@ -86,8 +86,8 @@ else{
                         {program.map((val, ind) => {
                           return (
                             <>
-                              <NavDropdown.Item className="prog" href={`/program/${val.id}`}>
-                                {val.title}
+                              <NavDropdown.Item className="prog" href={`/program/${val.id}`}><i class="fa-solid fa-angles-right navicon"></i> 
+                                {val.title} 
                                 <NavDropdown.Divider />
                               </NavDropdown.Item>
                               

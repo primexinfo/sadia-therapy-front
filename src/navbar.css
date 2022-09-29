@@ -79,3 +79,19 @@
   border-radius: 5px;
   margin-right: 10px;
 } */
+.navicon{
+  color: #b97fb8;
+  margin-right: 0.5rem;
+  animation: scrollRight 0.5s alternate ease infinite;
+}
+.navicon:hover{
+  color: #fff;
+}
+@keyframes scrollRight{
+  from{
+  transform: translatex(2px);
+  }
+  to{
+  transform: translatex(-1px);
+  }
+}

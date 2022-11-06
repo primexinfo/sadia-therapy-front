@@ -105,7 +105,7 @@ else{
                     </li>
                     <li className="nav-item mr-5">
                       <NavLink className="nav-link" to="/faq">
-                        Faq's
+                        FAQ
                       </NavLink>
                     </li>
                     <li className="nav-item mr-2">

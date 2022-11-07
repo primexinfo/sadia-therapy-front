@@ -13,6 +13,7 @@ import { InfoData } from "./InfoData";
 import View from "./viewSection/View";
 import ClientReview from "./ClientReview";
 import ScrollToTop from "./ScrollToTop";
+import AudioSection from "./AudioSection";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -142,6 +143,7 @@ function Home({ slides }) {
       </section>
       
       <InfoSection {...InfoData} />
+      <AudioSection/>
       <View/>
       <Services />
       {/* <ClientReview/> */}

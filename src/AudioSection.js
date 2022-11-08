@@ -8,7 +8,7 @@ const AudioSection = () => {
       <div className="col-md-10">
         <div className="modal-head ">
           <h5 className="modal-text" id="modalRequestLabel">
-            Listen this music
+            Listen to this audio
           </h5>
           {/* <audio
             src="./song/kesariya.mp3"

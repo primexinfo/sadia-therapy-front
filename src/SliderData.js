@@ -20,8 +20,8 @@ export const SliderData =[
 // },
 
 {
-   title:'to save your family',
-   common:"I could help you",
+   title:"Employ the Alternative way to Reflect and Make a Positive Change with Sadia Afrin",
+   common:"Master your mind with Solution-Focused Hypnotherapy",
    path:'/homes',
    lavel:'Contact me',
    video: videoThree,

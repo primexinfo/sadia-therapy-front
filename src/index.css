@@ -63,8 +63,8 @@ body {
 }
 
 #header h3 {
-  font-family: "Yesteryear", cursive !important;
-  color: #484848;
+  font-family: barlow !important;
+  color: #f8ecec;
   font-size: 1.5rem;
   animation-delay: 0.4s;
 }

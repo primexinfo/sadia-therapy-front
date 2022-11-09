@@ -14,7 +14,7 @@ import { InfoData , InfoDataTwo } from "./InfoData";
 import View from "./viewSection/View";
 import ClientReview from "./ClientReview";
 import ScrollToTop from "./ScrollToTop";
-import AudioSection from "./AudioSection";
+// import AudioSection from "./AudioSection";
 
 const Wrapper = styled.div`
   width: 100%;
@@ -125,7 +125,7 @@ function Home({ slides }) {
                       />
                     </video>
                     <Content>
-                      <h1 className="homePage-title common">{slide.common}</h1>
+                      <h1 className="homePage-title common">Master your mind with <br></br>Solution-Focused Hypnotherapy</h1>
                       <h3 className="homePage-title">{slide.title}</h3>
                       <Button className="home-button" to={"/contact"}>
                         {slide.lavel}
@@ -145,7 +145,7 @@ function Home({ slides }) {
       <WelcomeNote {...InfoDataTwo}/>
       <InfoSection {...InfoData} />
      
-      <AudioSection />
+      {/* <AudioSection /> */}
       <View />
       <Services />
       {/* <ClientReview/> */}

@@ -9,7 +9,8 @@ import Services from "./Program";
 import Accordion from "./Accordion";
 import Contact from "./Contact";
 import InfoSection from "./InfoSection";
-import { InfoData } from "./InfoData";
+import WelcomeNote from "./WelcomeNote"
+import { InfoData , InfoDataTwo } from "./InfoData";
 import View from "./viewSection/View";
 import ClientReview from "./ClientReview";
 import ScrollToTop from "./ScrollToTop";
@@ -17,7 +18,7 @@ import AudioSection from "./AudioSection";
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +28,7 @@ const Wrapper = styled.div`
 const Slide = styled.div`
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 `;
 // const Image = styled.video`
 //   position: absolute;
@@ -82,7 +83,7 @@ function Home({ slides }) {
     const nextSlide = () => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
     };
-    timeOut.current = setTimeout(nextSlide, 5000)
+    timeOut.current = setTimeout(nextSlide, 5000);
     return function () {
       if (timeOut.current) {
         clearTimeout(timeOut.current);
@@ -107,7 +108,7 @@ function Home({ slides }) {
   }
   return (
     <>
-      <ScrollToTop/>
+      <ScrollToTop />
       <section id="header" className="d-flex align-items-center">
         <Wrapper>
           {slides.map((slide, index) => {
@@ -126,7 +127,7 @@ function Home({ slides }) {
                     <Content>
                       <h1 className="homePage-title common">{slide.common}</h1>
                       <h3 className="homePage-title">{slide.title}</h3>
-                      <Button className="home-button" to={'/contact'}>
+                      <Button className="home-button" to={"/contact"}>
                         {slide.lavel}
                       </Button>
                     </Content>
@@ -141,10 +142,11 @@ function Home({ slides }) {
           </SliderButton> */}
         </Wrapper>
       </section>
-      
+      <WelcomeNote {...InfoDataTwo}/>
       <InfoSection {...InfoData} />
-      <AudioSection/>
-      <View/>
+     
+      <AudioSection />
+      <View />
       <Services />
       {/* <ClientReview/> */}
       {/* <Accordion /> */}

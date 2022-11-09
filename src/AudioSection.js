@@ -1,6 +1,6 @@
 import React from "react";
 import "./audiosection.css";
-import sound from "./kesariya.mp3"
+// import sound from "./kesariya.mp3"
 
 const AudioSection = () => {
   return (
@@ -19,7 +19,7 @@ const AudioSection = () => {
 
           <audio  controls
             autoPlay>
-            <source src={sound} type="audio/mp3" />
+            <source  type="audio/mp3" />
           </audio>
         </div>
       </div>

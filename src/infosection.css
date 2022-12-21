@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
 .section-info{
     display: flex;
     align-items: center;
@@ -61,13 +63,18 @@
     text-rendering: auto;
 }
 .welcome-text{
-    margin-top: 2rem;
+    font-family: 'Fira Sans', sans-serif;
+    
     font-size: 1rem;
     margin-right: 2rem;
 }
 a{
     text-decoration: none !important;
     color: #540553;
+}
+.str{
+    font-size: 30px;
+    font-weight: 100;
 }
 
 @media screen and (max-width: 768px) {

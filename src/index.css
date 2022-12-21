@@ -384,8 +384,8 @@ label {
   transition: all 0.3s ease;
 }
 .footer-col .social-links a:hover {
-  color: #070707;
-  background-color: #b97fb8;
+  color: #f0ecec;
+  background-color: #540553;
 }
 .social-links {
   margin-left: 15px;

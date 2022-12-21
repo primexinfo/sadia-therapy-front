@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import {} from "@fortawesome/free-solid-svg-icons";
+import Aos from "aos";
+import 'aos/dist/aos.css'
 import {
   FaFacebook,
   FaInstagram,
@@ -11,12 +13,15 @@ import {
 import Accordion from "./Accordion";
 
 function Footer() {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
   return (
     <>
       <footer className="footer">
         <div className="footerContainer">
           <div className="footerRow">
-            <div className="footer-col">
+            <div data-aos="fade-up" className="footer-col">
               <h4>Company</h4>
               <ul>
                 <li>
@@ -30,7 +35,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="footer-col">
+            <div data-aos="fade-up" className="footer-col">
               <h4>get help</h4>
               <ul>
                 <li>
@@ -50,7 +55,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="footer-col footer-follow">
+            <div data-aos="fade-up" className="footer-col footer-follow">
               <h4>Follow Us</h4>
               <div className="social-links">
                 <a href="">

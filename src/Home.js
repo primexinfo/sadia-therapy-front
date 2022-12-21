@@ -14,6 +14,8 @@ import { InfoData , InfoDataTwo } from "./InfoData";
 import View from "./viewSection/View";
 import ClientReview from "./ClientReview";
 import ScrollToTop from "./ScrollToTop";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 // import AudioSection from "./AudioSection";
 
 const Wrapper = styled.div`
@@ -75,10 +77,14 @@ const NextArrow = styled(IoArrowForward)`
   ${arrowButtons}
 `;
 function Home({ slides }) {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
+
   const [current, setCurrent] = useState(0);
   const length = slides.length;
   const timeOut = useRef(null);
-
+  
   useEffect(() => {
     const nextSlide = () => {
       setCurrent((current) => (current === length - 1 ? 0 : current + 1));
@@ -106,6 +112,7 @@ function Home({ slides }) {
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
+ 
   return (
     <>
       <ScrollToTop />
@@ -124,10 +131,10 @@ function Home({ slides }) {
                         type="video/mp4"
                       />
                     </video>
-                    <Content>
-                      <h2 className="homePage-title common">Master your mind with </h2> <h1 className="homePage-title common">Solution-Focused Hypnotherapy</h1>
-                      <h3 className="homePage-title">{slide.title}</h3>
-                      <Button className="home-button" to={"/contact"}>
+                    <Content >
+                      <h2 data-aos="fade-up" data-aos-duration="2000"   className="homePage-title common">Master your mind with </h2> <h1 data-aos="fade-up" data-aos-duration="3000"  className="homePage-title common">Solution-Focused Hypnotherapy</h1>
+                      <h3 data-aos="fade-up" data-aos-duration="4000"   className="homePage-title">{slide.title}</h3>
+                      <Button data-aos="fade-up" data-aos-duration="7000"  className="home-button" to={"/contact"}>
                         {slide.lavel}
                       </Button>
                     </Content>
@@ -146,11 +153,11 @@ function Home({ slides }) {
       <InfoSection {...InfoData} />
      
       {/* <AudioSection /> */}
-      <View />
-      <Services />
+      <View data-aos="fade-up" />
+      <Services data-aos="fade-up" />
       {/* <ClientReview/> */}
       {/* <Accordion /> */}
-      <Contact />
+      <Contact data-aos="fade-up" />
     </>
   );
 }

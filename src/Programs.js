@@ -3,9 +3,16 @@ import ProgramCard from "./ProgramCard";
 import Sdata from "./Sdata";
 import axios from 'axios'
 import { api, IMG_BASE_URL } from "./api/api";
+import Aos from 'aos';
+
+import 'aos/dist/aos.css'
+
 
 function Programs() {
   const [program, setAllProgram] = useState([]);
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
 
   useEffect(() => {
     axios
@@ -20,7 +27,7 @@ function Programs() {
   }, []);
   return (
     <>
-      <div className="container">
+      <div data-aos="fade-left" className="container">
         <div className="my-5">
           <h1 className="pt-5 text-center service-text-h"> Need a solution</h1>
           <p className="text-center service-text-p">Explore my programs</p>

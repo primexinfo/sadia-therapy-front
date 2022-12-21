@@ -18,7 +18,7 @@
     z-index: -1;
 }
 .home-button{
- 
+  font-weight: 600 !important;
   font-family: roboto;
   font-size: 4rem;
   font-weight: 100;
@@ -29,9 +29,13 @@
   transition: 0.2s transform ease-in-out;
   will-change: transform;
   z-index: 0;
+  background:transparent !important;
+  color: #2a2a2a !important;
 }
 .home-button::after {
-    background-color:#421341;
+
+  
+    background-color:rgb(213 70 0);
     border-radius: 3rem;
     content: '';
     display: block;
@@ -47,11 +51,12 @@
     z-index: -1;
   }
   .home-button:hover::after {
+    font-weight: 300 !important;
     transform: translate(0, 0);
   }
   .home-button:hover {
   
-    color: #ffffff;
+    color: #ffffff !important;
     
   }
 .slider{

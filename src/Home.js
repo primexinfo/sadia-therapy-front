@@ -134,7 +134,7 @@ function Home({ slides }) {
                     <Content >
                       <h2 data-aos="fade-up" data-aos-duration="2000"   className="homePage-title common">Master your mind with </h2> <h1 data-aos="fade-up" data-aos-duration="3000"  className="homePage-title common">Solution-Focused Hypnotherapy</h1>
                       <h3 data-aos="fade-up" data-aos-duration="4000"   className="homePage-title">{slide.title}</h3>
-                      <Button data-aos="fade-up" data-aos-duration="7000"  className="home-button" to={"/contact"}>
+                      <Button data-aos="fade-right" data-aos-duration="7000"  className="home-button" to={"/contact"}>
                         {slide.lavel}
                       </Button>
                     </Content>

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Yesteryear&display=swap");
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,7 +8,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: rgb(224, 224, 224) !important;
+  background-blend-mode: soft-light;
   background: transparent;
+  opacity: 0.8;
 }
 /* .navbar.active{
 

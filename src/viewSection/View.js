@@ -3,7 +3,9 @@ import Tdata from './../Tdata';
 import "./view.css"
 import { Button } from '../Button';
 // import Button from './../Button'
+import Aos from 'aos';
 
+import 'aos/dist/aos.css'
 
 
 
@@ -12,6 +14,10 @@ import { Button } from '../Button';
 function View( props) {
   const [people] = useState(Tdata)
   const [index, setIndex] = useState(0)
+
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
 
   useEffect(()=>{
     const lastIndex = people.length -1
@@ -33,11 +39,11 @@ function View( props) {
   }, [index])
   return  <>
   
-  <section className='section'>
+  <section   className='section'>
     <div className="title">
       <h2 className="hero-title">How my therapy work</h2>
     </div>
-    <div className="section-center">
+    <div data-aos="fade-up"  className="section-center">
       {people.map((item, key)=>{
         const{id, img, name, testimoni} = item
         let position = "nextSlide"

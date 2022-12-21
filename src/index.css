@@ -24,6 +24,7 @@ body {
   margin-right: 15rem;
     padding-left: 10px;
   color: aliceblue !important;
+  opacity: 0.8;
 }
 #header h1 {
   /* margin: 50px 50px -25px 0px; */
@@ -55,7 +56,7 @@ body {
   min-width: 0px;
   max-height: none;
   max-width: none;
-  opacity: 1;
+  opacity: 0.8;
   transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
   transform-origin: 50% 50% 0px;
 }
@@ -71,10 +72,14 @@ body {
 }
 
 #header h3 {
-  font-family: barlow !important;
-  color: #f8ecec;
+  background: #53839f;
+  padding: 0 1rem;
+  /* font-family: barlow !important; */
+  color: #000000;
   font-size: 1.5rem;
   animation-delay: 0.4s;
+  border-radius: 5px;
+  opacity: 0.8;
 }
 /* .homePage-title{
   z-index: 5;

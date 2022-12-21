@@ -17,7 +17,7 @@
 .nav-item a:hover {
   color: #fff !important;
   /* padding: 5px 8px !important; */
-  background: #b97fb8 !important;
+  background: #540553 !important;
   border-radius: 2px;
 }
 
@@ -29,7 +29,7 @@
   line-height: 1.25em;
   text-decoration: none;
   text-transform: none;
-  color: #b97fb8 !important;
+  color: #540553 !important;
 }
 .nav-item {
   font-family: inherit;
@@ -49,18 +49,18 @@
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: #b97fb8;
+  background-color: #540553;
   margin: 0 10px 10px 0;
   text-align: center;
   line-height: 40px;
   border-radius: 50%;
-  border: #b97fb8;
+  border: #540553;
   color: #fff;
   transition: all 0.3s ease;
 }
 .nav-link {
   font-weight: 600;
-  color: #b97fb8 !important;
+  color: #540553 !important;
   margin-right: 10px;
 }
 
@@ -69,7 +69,7 @@
 
   color: #fff !important;
   
-  background: #b97fb8 !important;
+  background: #540553 !important;
   border-radius: 2px;
 }
 /* #nav-link.active {
@@ -80,7 +80,7 @@
   margin-right: 10px;
 } */
 .navicon{
-  color: #b97fb8;
+  color: #540553;
   margin-right: 0.5rem;
   animation: scrollRight 0.5s alternate ease infinite;
 }

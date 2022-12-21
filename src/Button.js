@@ -13,7 +13,7 @@ export const Button = styled(Link)`
   border-radius: 50px;
   transition: 0.5s;
   color: #fff;
-  background-color: rgb(248, 159, 115);
+  background-color: rgb(213 70 0);
   text-decoration: none;
   animation-delay: 0.6s;
 `

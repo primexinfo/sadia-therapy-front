@@ -125,7 +125,7 @@ function Home({ slides }) {
                       />
                     </video>
                     <Content>
-                      <h1 className="homePage-title common">Master your mind with <br></br>Solution-Focused Hypnotherapy</h1>
+                      <h2 className="homePage-title common">Master your mind with </h2> <h1 className="homePage-title common">Solution-Focused Hypnotherapy</h1>
                       <h3 className="homePage-title">{slide.title}</h3>
                       <Button className="home-button" to={"/contact"}>
                         {slide.lavel}

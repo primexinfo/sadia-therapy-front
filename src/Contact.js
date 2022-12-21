@@ -42,7 +42,7 @@ function Contact() {
 							<div className="icon d-flex align-items-center justify-content-center contact-text-phone">
 								<span className="fa fa-phone"></span>
 							</div>
-							<div className="text">
+							<div className="textphone">
 								<p><span>Phone:</span> <a href="tel://+447944946496">+44 7944 946496</a></p>
 							</div>
 						</div>
@@ -50,7 +50,7 @@ function Contact() {
 							<div className="icon d-flex align-items-center justify-content-center contact-text-phone">
 								<span className="fa fa-envelope"></span>
 							</div>
-							<div className="text">
+							<div className="textemail">
 								<p><span>Email:</span> <a href="mailto:sadia.hypnotherapy@gmail.com">sadia.hypnotherapy@gmail.com</a></p>
 							</div>
 						</div>

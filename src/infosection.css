@@ -64,9 +64,12 @@
 }
 .welcome-text{
     font-family: 'Fira Sans', sans-serif;
-    
     font-size: 1rem;
     margin-right: 2rem;
+    text-align: justify;
+    text-shadow: #540553;
+    font-size: 14.7px;
+    font-weight: 500;
 }
 a{
     text-decoration: none !important;

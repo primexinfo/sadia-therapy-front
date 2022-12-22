@@ -1,5 +1,6 @@
 import React from 'react'
 import image from '../src/image/image1.jpg'
+import imageTwo from '../src/image/sadia.jpg'
 import './about.css'
 function About() {
   return (
@@ -8,8 +9,9 @@ function About() {
         <h1 className='hero-title'>About Me</h1>
       </div>
       <div className='content row'>
-        <div className='col-md-6 col-sm-12'>
-          <img className='mb-3 img-fluid' src={image} alt="" />
+        <div className='imagecolum col-md-6 col-sm-12'>
+          <img className='shadow anim mb-3 img-fluid' src={image} alt="" />
+          <img className='shadow anim mb-3 img-fluid' src={imageTwo} alt="" />
         </div>
         <div className='col-md-6 col-sm-12'>
           <p className='text-justify'><strong> Hello, I am Sadia Afrin, a qualified Clinical Solution Focused Hypnotherapist based in the UK. I pride myself on being passionate about making positive changes in people’s lives. From childhood, I have wanted to soothe the troubles of the people around me, whether it be my siblings, friends, or others.</strong> 

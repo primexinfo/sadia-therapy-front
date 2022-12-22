@@ -18,3 +18,8 @@
     font-family: 'Mukta', sans-serif;
     text-align: justify;
 }
+
+.imagecolum img {
+    border-radius: 5px;
+    box-shadow: ;
+}

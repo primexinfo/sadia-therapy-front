@@ -1,3 +1,6 @@
 .hypno-img{
    float: left;
 }
+.descSection p {
+   text-align: justify;
+}

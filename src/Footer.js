@@ -25,11 +25,12 @@ function Footer() {
               <h4>Company</h4>
               <ul>
                 <li>
-                  <a href="">about</a>
+                  <Link to={"/about"}><a href="">about</a></Link>
+                  
                 </li>
-                <li>
+                {/* <li>
                   <a href="">services</a>
-                </li>
+                </li> */}
                 <li>
                   <a href="">privacy policy</a>
                 </li>
@@ -43,11 +44,11 @@ function Footer() {
                     <a href="">FAQ</a>{" "}
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to={""}>
                     <a href="">programs</a>{" "}
                   </Link>
-                </li>
+                </li> */}
                 <li>
                   <Link to={""}>
                     <a href="">payment options</a>{" "}
@@ -58,15 +59,15 @@ function Footer() {
             <div data-aos="fade-up" className="footer-col footer-follow">
               <h4>Follow Us</h4>
               <div className="social-links">
-                <a href="">
+                <a href="https://www.facebook.com/sadia.hyp">
                   <FaFacebook />
                 </a>
-                <a href="">
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsadiaafrinhypnotherapy%2F%3Ffbclid%3DIwAR24aDSoqvqOR5YrIjc4XvB3wPqC4G5jJ26S4KLG256ON7Kz7kAN-u88W4g&h=AT04MmgFqj1AJHKgIH6_jN4sW3uqxaCfH4_0tJWNMVxMw6n-axgxwmvnyBAqSjx_50N7ZGCNbWn8Qu3q0I0SX10cUFNop4QnUGD2r16oQhUD6dFUX2iN9mXlg8natEZvau1LWw">
                   <FaInstagram />
                 </a>
-                <a href="">
+                {/* <a href="">
                   <FaGithub />
-                </a>
+                </a> */}
                 <a href="">
                   <FaLinkedin />
                 </a>

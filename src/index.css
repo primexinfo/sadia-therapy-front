@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Yesteryear&display=swap");
 @import url("https:/cdn.syncfusion.com/ej2/material.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -72,14 +74,15 @@ body {
 }
 
 #header h3 {
-  background: #53839f;
-  padding: 0 1rem;
-  /* font-family: barlow !important; */
-  color: #000000;
-  font-size: 1.5rem;
+  background: #2e3560;
+  padding: 1rem 1rem;
+  font-family: 'Oswald', sans-serif;
+  color: aliceblue;
+  font-size: 13pt;
   animation-delay: 0.4s;
   border-radius: 5px;
   opacity: 0.8;
+  
 }
 /* .homePage-title{
   z-index: 5;
@@ -354,7 +357,7 @@ label {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: #b97fb8;
+  background-color: #972853;
   height: 2px;
   box-sizing: border-box;
   width: 50px;

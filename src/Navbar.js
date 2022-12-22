@@ -5,6 +5,7 @@ import { api, IMG_BASE_URL } from "./api/api";
 import "./navbar.css";
 import { NavDropdown } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
+import logo from '../src/image/sadia-logo.png'
 function Navbar() {
   const [program, setAllProgram] = useState([]);
   const [navbar, setNavbar] = useState(false)
@@ -41,10 +42,11 @@ else{
       <div className="container-fluid nav_bg ">
         <div className="row">
           <div className="col-12 mx-auto">
-            <nav className={navbar?"navbar sticky-top navbar-expand-lg navbar-light p-md-3 active":"navbar  navbar-expand-lg navbar-light p-md-3 "}>
+            <nav className={navbar?"navbar sticky-top navbar-expand-lg navbar-light p-md-2 active":"navbar  navbar-expand-lg navbar-light p-md-2 "}>
               <div className="container-fluid ">
-                <NavLink className="navbar-brand" to="/">
-                  Sadia Afrin
+                <NavLink className="navbar-brand"  aria-current="page" to="/">
+                 <img src={logo} alt="" />
+                 {/* Sadia Therapy */}
                 </NavLink>
                 <button
                   className="navbar-toggler"

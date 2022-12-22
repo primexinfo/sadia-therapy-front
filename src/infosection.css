@@ -24,7 +24,20 @@
     margin-top: 1.5rem;
     font-size: 2.5rem;
     font-family: YesterYear;
+    
 }
+.hero-title::before {
+    content: "";
+    position: fixed;
+    display: flex;
+    align-content: center;
+    left: 0;
+    bottom: -10px;
+    background-color: #972853;
+    height: 2px;
+    box-sizing: border-box;
+    width: 100%;
+  }
 .blog-title{
     /*color: #b97fb8;*/
     font-size: 1.5rem;

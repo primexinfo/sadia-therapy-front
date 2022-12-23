@@ -24,7 +24,10 @@
   }
   
   .blog-wrap img {
-	width: 100%;
+	width: 50%;
+	float: left;
+	margin: 20px;
+	
   }
   
   .blog-subCategory {
@@ -44,4 +47,9 @@
 	border-radius: 10px;
 	height: 90vh;
    
+  }
+  .prog-title{
+	background-color:#bb2685;
+	border-radius: 5px;
+	padding: 0.5rem;
   }

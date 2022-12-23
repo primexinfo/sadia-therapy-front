@@ -4,6 +4,7 @@ import { Button } from "./Button";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 import "./infosection.css";
+import "./home.css";
 import { Link } from "react-router-dom";
 import { api, IMG_BASE_URL } from "./api/api";
 import Aos from 'aos'
@@ -54,7 +55,7 @@ useEffect(()=>{
                   <h2 className="blog-title">{value.title}</h2>
                   <p dangerouslySetInnerHTML={{ __html: value.sub_title }}></p>
 
-                  <Button className="button" to={`/blog/${value.id}`}>
+                  <Button className="home-button" to={`/blog/${value.id}`}>
                     Read More
                   </Button>
                 </div>

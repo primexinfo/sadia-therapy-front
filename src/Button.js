@@ -10,7 +10,7 @@ export const Button = styled(Link)`
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 30px;
-  border-radius: 50px;
+  border-radius:5px;
   transition: 0.5s;
   color: #fff;
   background-color: rgb(213 70 0);

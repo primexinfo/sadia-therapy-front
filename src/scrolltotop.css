@@ -8,6 +8,7 @@
     background: #540553;
     color: #fff;
     z-index: 1;
+    cursor: pointer;
 }
 .scroll-to-top .i{
     margin-top: 10px;

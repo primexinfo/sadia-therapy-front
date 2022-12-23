@@ -31,7 +31,7 @@ const ProgramSection = () => {
                    <div className="blog-wrap">
                     <header>
               <p className="pt-5 blog-date">{program.created_at} </p>
-              <h1>{program.title}</h1>
+              <h1 className="prog-title">{program.title}</h1>
             </header>
             <img className="shadow prog-img"
               src={`${IMG_BASE_URL}/services/${program.photo}`}

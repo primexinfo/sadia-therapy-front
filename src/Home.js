@@ -16,6 +16,7 @@ import ClientReview from "./ClientReview";
 import ScrollToTop from "./ScrollToTop";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import PriceSection from "./PriceSection";
 // import AudioSection from "./AudioSection";
 
 const Wrapper = styled.div`
@@ -154,6 +155,7 @@ function Home({ slides }) {
      
       {/* <AudioSection /> */}
       <View data-aos="fade-up" />
+      <PriceSection/>
       <Services data-aos="fade-up" />
       {/* <ClientReview/> */}
       {/* <Accordion /> */}

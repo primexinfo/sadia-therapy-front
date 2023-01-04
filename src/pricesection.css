@@ -1,0 +1,238 @@
+/* body {
+  background: #B1EA86;
+  padding: 30px 0
+} */
+
+a {
+  text-decoration: none;
+}
+
+.pricingTable {
+  text-align: center;
+  background: #fff;
+  margin: 0 -15px;
+  box-shadow: 0 0 10px #ababab;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  color: #cad0de;
+  transform: scale(1);
+  transition: all .5s ease 0s
+}
+
+.pricingTable:hover {
+  transform: scale(1.05);
+  z-index: 1
+}
+
+.pricingTable .pricingTable-header {
+  padding: 40px 0;
+  background: #f5f6f9;
+  border-radius: 10px 10px 50% 50%;
+  transition: all .5s ease 0s
+}
+
+.pricingTable:hover .pricingTable-header {
+  background: #bb2685 
+}
+
+.pricingTable .pricingTable-header i {
+  font-size: 50px;
+  color: #858c9a;
+  margin-bottom: 10px;
+  transition: all .5s ease 0s
+}
+
+.pricingTable .price-value {
+  font-size: 35px;
+  color: #bb2685 ;
+  transition: all .5s ease 0s
+}
+
+.pricingTable .month {
+  display: block;
+  font-size: 14px;
+  color: #cad0de
+}
+
+.pricingTable:hover .month,
+.pricingTable:hover .price-value,
+.pricingTable:hover .pricingTable-header i {
+  color: #fff
+}
+
+.pricingTable .heading {
+  font-size: 20px;
+  color: #bb2685 ;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-transform: uppercase
+}
+
+.pricingTable .pricing-content ul {
+  list-style: none;
+padding-left: 10px;
+padding-right: 20px;
+  margin-bottom: 30px
+}
+
+.pricingTable .pricing-content ul li {
+ 
+  line-height: 30px;
+  color: #a7a8aa
+}
+
+.pricingTable .pricingTable-signup a {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background: #bb2685 ;
+  text-transform: uppercase;
+  transition: all .3s ease 0s
+}
+
+.pricingTable .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #bb2685 
+}
+
+.pricingTable.blue .heading,
+.pricingTable.blue .price-value {
+  color: #bb2685
+}
+
+.pricingTable.blue .pricingTable-signup a,
+.pricingTable.blue:hover .pricingTable-header {
+  background: #bb2685
+}
+
+.pricingTable.blue .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #bb2685
+}
+
+.pricingTable.red .heading,
+.pricingTable.red .price-value {
+  color: #540553
+}
+
+.pricingTable.red .pricingTable-signup a,
+.pricingTable.red:hover .pricingTable-header {
+  background: #540553
+}
+
+.pricingTable.red .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #540553
+}
+
+.pricingTable.green .heading,
+.pricingTable.green .price-value {
+  color: #540553
+}
+
+.pricingTable.green .pricingTable-signup a,
+.pricingTable.green:hover .pricingTable-header {
+  background: #540553
+}
+
+.pricingTable.green .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #540553
+}
+
+.pricingTable.blue:hover .price-value,
+.pricingTable.green:hover .price-value,
+.pricingTable.red:hover .price-value {
+  color: #fff
+}
+.white-mode{
+  font-size: 20px;
+  float: right;
+  font-weight: 400 !important;
+}
+
+@media screen and (max-width:990px) {
+  .pricingTable {
+      margin: 0 0 20px
+  }
+}
+
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Yesteryear&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+  
+  .pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .pricing hr {
+    margin: 1.5rem 0;
+  }
+  
+  .pricing .card-title {
+    margin: 0.5rem 0;
+    /* font-size: 0.9rem; */
+    letter-spacing: .1rem;
+    font-weight: bold;
+    
+    font-size: 18px !important;
+    font-family: 'Oswald', sans-serif !important;
+  }
+  
+  .pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .pricing .card-price .period {
+    font-size: 0.8rem;
+  }
+  
+  .pricing ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .pricing .text-muted {
+    opacity: 0.7;
+  }
+  
+  .pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+
+  .price-title h5{
+   color: aliceblue;
+   font-weight: 600;
+  }
+  .card-head-bg{
+    background-color: #bb2685  !important;
+    padding-bottom: 3rem;
+  }
+.white-mode{
+  padding-right: 5rem;
+  padding-top: 1rem;
+}
+  
+  /* Hover Effects on Card */
+
+  @media (min-width: 992px) {
+    .pricing .card:hover {
+      margin-top: -.25rem;
+      margin-bottom: .25rem;
+      box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+  
+    .pricing .card:hover .btn {
+      opacity: 1;
+    }
+  }

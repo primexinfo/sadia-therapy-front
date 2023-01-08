@@ -4,6 +4,7 @@ import "./home.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import './pricesection.css'
+import { NavLink } from "react-router-dom";
 
 // import {PricingTable, PricingSlot, PricingDetail} from 'react-pricing-table';
 
@@ -30,7 +31,8 @@ const PriceSection = () => {
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
-                        <a href="#">sign up</a>
+                       <a href="/appointment">Book Now</a>
+                      
                     </div>
                 </div>
             </div>
@@ -49,7 +51,7 @@ const PriceSection = () => {
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
-                        <a href="#">sign up</a>
+                        <a href="/appointment">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -68,7 +70,7 @@ const PriceSection = () => {
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
-                        <a href="#">sign up</a>
+                        <a href="/appointment">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +88,7 @@ const PriceSection = () => {
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
-                        <a href="#">sign up</a>
+                        <a href="/appointment">Book Now</a>
                     </div>
                 </div>
             </div>

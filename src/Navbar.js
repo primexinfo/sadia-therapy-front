@@ -105,7 +105,7 @@ else{
                         Blog
                       </NavLink>
                     </li>
-                    <li className="nav-item mr-5">
+                    <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/faq">
                         FAQ
                       </NavLink>

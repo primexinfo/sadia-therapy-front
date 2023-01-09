@@ -1,18 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
-import { NavLink } from "react-router-dom";
-import { IoMdArrowRoundForward } from "react-icons/io";
+
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import styled, { css } from "styled-components/macro";
 import "./home.css";
 import { Button } from "./Button";
 import Services from "./Program";
-import Accordion from "./Accordion";
+// import Accordion from "./Accordion";
 import Contact from "./Contact";
 import InfoSection from "./InfoSection";
 import WelcomeNote from "./WelcomeNote"
 import { InfoData , InfoDataTwo } from "./InfoData";
 import View from "./viewSection/View";
-import ClientReview from "./ClientReview";
+// import ClientReview from "./ClientReview";
 import ScrollToTop from "./ScrollToTop";
 import Aos from 'aos'
 import 'aos/dist/aos.css'

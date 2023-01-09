@@ -26,12 +26,15 @@ const PriceSection = () => {
                     <h3 class="heading">Deep relaxation</h3>
                     <div class="pricing-content">
                         <ul>
-                        <li><b>Value $99</b>RTT™ relaxation recording to introduce and prepare you for your Hypnotherapy session </li>
-                            <li><b>Value $350</b> 1.5-hour to 2-hour RTT® hypnotherapy session to address your main issue/habit/concern</li>
+                        <li>Focusing on your breathing
+
+Progressive muscle relaxation — tighten and relax your muscles throughout your body
+
+Visualisation — imagine a relaxing place and focus on the details</li>
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
-                       <a href="/appointment">Book Now</a>
+                       <a href="/appointment">go for a free call</a>
                       
                     </div>
                 </div>
@@ -46,8 +49,7 @@ const PriceSection = () => {
                     <h3 class="heading">Anxity and Stress</h3>
                     <div class="pricing-content">
                         <ul>
-                        <li><b>Value $99</b>RTT™ relaxation recording to introduce and prepare you for your Hypnotherapy session </li>
-                            <li><b>Value $350</b> 1.5-hour to 2-hour RTT® hypnotherapy session to address your main issue/habit/concern</li>
+                        <li>A hypnotic approach to BFRBs may involve: Reducing stress. Stress and anxiety are common triggers for BFRBs. Hypnosis helps to regulate the autonomic nervous system by increasing parasympathetic activity.</li>
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
@@ -64,8 +66,10 @@ const PriceSection = () => {
                     <h3 class="heading">phobias and fears</h3>
                     <div class="pricing-content">
                         <ul>
-                            <li><b>Value $99</b>RTT™ relaxation recording to introduce and prepare you for your Hypnotherapy session </li>
-                            <li><b>Value $350</b> 1.5-hour to 2-hour RTT® hypnotherapy session to address your main issue/habit/concern</li>
+                            <li>
+
+Break and update these patterns of behaviour and take full control of your life.
+ tools and techniques of hypnotherapy to transform your subconscious patterns and eradicate negative thoughts. </li>
                           
                         </ul>
                     </div>
@@ -83,8 +87,12 @@ const PriceSection = () => {
                     <h3 class="heading">Sleep Improvement</h3>
                     <div class="pricing-content">
                         <ul>
-                        <li><b>Value $99</b>RTT™ relaxation recording to introduce and prepare you for your Hypnotherapy session </li>
-                            <li><b>Value $350</b> 1.5-hour to 2-hour RTT® hypnotherapy session to address your main issue/habit/concern</li>
+                        <li>Realise that sound sleep is possible without medications.
+
+Learn how hypnosis can help you calm your mind and stop overthinking in bed.
+
+Discover how to shift your behaviour and build better sleep patterns.    
+</li>
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
@@ -95,7 +103,7 @@ const PriceSection = () => {
         </div>
     </div>
 </div>
-<a target="_blank" href="https://gosnippets.com" className="white-mode">MORE ></a>
+<a target="_blank" href="#" className="white-mode">MORE ></a>
 </>
     
     // <section className="pricing py-5">

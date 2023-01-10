@@ -6,6 +6,8 @@ import "./navbar.css";
 import { NavDropdown } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
 import logo from '../src/image/sadia-logo.png'
+import PackageMenu from "./PackageMenu";
+
 function Navbar() {
   const [program, setAllProgram] = useState([]);
   const [navbar, setNavbar] = useState(false)
@@ -66,12 +68,12 @@ else{
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0 menu-line-height">
                     <li className="nav-item mr-2">
                       <NavLink className="nav-link" aria-current="page" to="/">
-                        Home
+                        HOME
                       </NavLink>
                     </li>
                     <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/About">
-                        About
+                        ABOUT ME
                       </NavLink>
                     </li>
                     <li className="nav-item dropdown mr-2">
@@ -79,7 +81,7 @@ else{
 
                       <NavDropdown
                      
-                        title="Programs"
+                        title="SERVICES"
                         id="collasible-nav-dropdown nav-link"
                         show={show}
                         onMouseEnter={showDropdown}
@@ -100,25 +102,30 @@ else{
 
                       {/* </NavLink> */}
                     </li>
-                    <li className="nav-item mr-2 ">
+                    {/* <li className="nav-item mr-2 ">
                       <NavLink className="nav-link" to="/blogs">
                         Blog
                       </NavLink>
-                    </li>
+                    </li> */}
                     <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/faq">
-                        FAQ
-                      </NavLink>
-                    </li>
-                    <li className="nav-item mr-2">
-                      <NavLink className="nav-link" to="/appointment">
-                        Appoinment
+                       FAQ
                       </NavLink>
                     </li>
                     
+                    <li className="nav-item mr-2 ">
+                      <PackageMenu/>
+                    </li>
+                    <li className="nav-item mr-2">
+                      <NavLink className="nav-link" to="/appointment">
+                        APPOINTMENT
+                      </NavLink>
+                    </li>
+
+                    
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/contact">
-                        Contact
+                        CONTACT
                       </NavLink>
                     </li>
                   </ul>

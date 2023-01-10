@@ -21,7 +21,7 @@ const PriceSection = () => {
                 <div  class="pricingTable">
                     <div class="pricingTable-header">
                     <i class="fa-solid fa-face-grin-beam"></i>
-                        <div class="price-value"> $10.00 <span class="month">per month</span> </div>
+                        <div class="price-value"> ₤40.00 <span class="month">relaxation session</span> </div>
                     </div>
                     <h3 class="heading">Deep relaxation</h3>
                     <div class="pricing-content">
@@ -44,7 +44,7 @@ Visualisation — imagine a relaxing place and focus on the details</li>
                 <div class="pricingTable green">
                     <div class="pricingTable-header">
                     <i class="fa-solid fa-face-grimace"></i>
-                        <div class="price-value"> $20.00 <span class="month">per month</span> </div>
+                        <div class="price-value"> ₤120.00 <span class="month">single session</span> </div>
                     </div>
                     <h3 class="heading">Anxity and Stress</h3>
                     <div class="pricing-content">
@@ -61,7 +61,7 @@ Visualisation — imagine a relaxing place and focus on the details</li>
                 <div class="pricingTable blue">
                     <div class="pricingTable-header">
                     <i class="fa-solid fa-face-tired"></i>
-                        <div class="price-value"> $30.00 <span class="month">per month</span> </div>
+                        <div class="price-value"> ₤300.00 <span class="month">three session package</span> </div>
                     </div>
                     <h3 class="heading">phobias and fears</h3>
                     <div class="pricing-content">
@@ -82,7 +82,7 @@ Break and update these patterns of behaviour and take full control of your life.
                 <div class="pricingTable red">
                     <div class="pricingTable-header">
                     <i class="fa-solid fa-face-smile-beam"></i>
-                        <div class="price-value"> $40.00 <span class="month">per month</span> </div>
+                        <div class="price-value"> ₤500.00 <span class="month">five session package</span> </div>
                     </div>
                     <h3 class="heading">Sleep Improvement</h3>
                     <div class="pricing-content">
@@ -105,6 +105,7 @@ Discover how to shift your behaviour and build better sleep patterns.
 </div>
 <a target="_blank" href="#" className="white-mode">MORE ></a>
 </>
+
     
     // <section className="pricing py-5">
     //   <div className="container">

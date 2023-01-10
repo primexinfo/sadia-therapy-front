@@ -16,6 +16,7 @@ import About from "./About";
 import AllBlogs from "./AllBlogs";
 import Programs from "./Programs";
 import ProgramSection from "./ProgramSection";
+import PriceSection from "./PriceSection";
 function App() {
   return (
     <>
@@ -26,6 +27,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/Programs" element={<Programs/>} />
         <Route exact path="/appointment" element={<Appoinment />} />
+        <Route exact path="/packages" element={<PriceSection />} />
         <Route exact path="/faq" element={<Accordion />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/blogs" element={<AllBlogs />} />

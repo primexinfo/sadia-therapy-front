@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from "react";
 import ProgramCard from "./ProgramCard";
-import Sdata from "./Sdata";
+
 import axios from 'axios'
 import { api, IMG_BASE_URL } from "./api/api";
 import Aos from 'aos';

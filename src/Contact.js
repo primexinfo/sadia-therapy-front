@@ -39,6 +39,7 @@ function Contact() {
 							<div className='form-group'>
 								<input type="submit" className='btn send-button' value='Send Message'/>
 							</div>
+						
 						</form>
 					</div>
 				</div>

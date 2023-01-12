@@ -74,7 +74,7 @@
   color: #fff !important;
   
   background: #540553 !important;
-  border-radius: 5px;
+
 }
 /* #nav-link.active {
   color: #fff !important;
@@ -92,6 +92,8 @@
   color: #fff;
   
 }
+
+
 @keyframes scrollRight{
   from{
   transform: translatex(2px);

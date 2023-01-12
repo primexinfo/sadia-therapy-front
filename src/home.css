@@ -34,7 +34,7 @@
 }
 .home-button::after {
   color: #ffffff !important;
-    background-color:rgb(213 70 0);
+    background-color:#540553;
     border-radius: 5px;
     content: '';
     display: block;
@@ -85,6 +85,38 @@
       rgba(0, 0, 0, 0.2) 100%
     );
   }
+
+  .logoimg{
+    width: 80px;
+    height: auto;
+  }
+.logosec{
+  display: flex;
+  align-items: flex-end;
+  padding-top: 35rem;;
+}
+  .logosec ul{
+    
+    float:right;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+    
+  .logosec li{
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-right: 20px;
+ }
+ 
+
+  
+ 
 
 @media screen and (max-width: 768px) {
     .video-back{

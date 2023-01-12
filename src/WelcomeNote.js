@@ -19,7 +19,7 @@ const Conteiner = styled.div`
   }
 `;
 
-const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
+const InfoSection = ({ heading, peragraphOne, reverse, image, logo1, logo2, logo3, logo4 }) => {
   const [frontBlog, setFrontBlog] = useState([]);
 useEffect(()=>{
   Aos.init({duration:2000})
@@ -40,6 +40,23 @@ useEffect(()=>{
       <div className="row">
       <div className="col-md-6">
           <img src={image} alt="" className="img-fluid" />
+          <div className="wellogosec">
+                        <ul >
+                          <li>
+                            <img className="cfwellogoimg" src={logo4} alt="" />
+                          </li>
+                        <li >
+                           <img className="wellogoimg" src={logo1} alt="" />
+                        </li>
+                        <li >
+                          <img className="wellogoimg" src={logo2} alt="" />
+                        </li>
+                        <li >
+                          <img className="wellogoimg" src={logo3} alt="" />
+                        </li>
+                       
+                      </ul>
+                      </div>
         </div>
         <div className="col-md-6">
           <h2 data-aos="fade-left"  className=" my-therapy hero-title text-center">know your hero</h2>

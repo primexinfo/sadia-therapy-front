@@ -17,6 +17,7 @@ import ScrollToTop from "./ScrollToTop";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import PriceSection from "./PriceSection";
+
 // import AudioSection from "./AudioSection";
 
 const Wrapper = styled.div`
@@ -138,7 +139,23 @@ function Home({ slides }) {
                       <Button data-aos="fade-right" data-aos-duration="7000"  className="home-button" to={"/contact"}>
                         {slide.lavel}
                       </Button>
+                      
+                      
                     </Content>
+                    <div className="logosec">
+                        <ul >
+                        <li >
+                           <img className="logoimg" src={slide.logo1} alt="" />
+                        </li>
+                        <li >
+                          <img className="logoimg" src={slide.logo2} alt="" />
+                        </li>
+                        <li >
+                          <img className="logoimg" src={slide.logo3} alt="" />
+                        </li>
+                       
+                      </ul>
+                      </div>
                   </div>
                 )}
               </Slide>

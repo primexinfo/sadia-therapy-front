@@ -65,7 +65,7 @@ const PackageMenu = () => {
           <a href="#" className="img-wrapper"
             ><span className="img"
               ><img
-                src="https://picsum.photos/400?random=4"
+                src="https://picsum.photos/400?random=5"
                 alt="Random Image" /></span
           ></a>
           <h2>5*60 minutes session</h2>

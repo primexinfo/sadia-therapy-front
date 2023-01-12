@@ -1,6 +1,6 @@
 import React from "react";
-import image from "../src/image/image1.jpg";
-import imageTwo from "../src/image/sadia.jpg";
+import image from "../src/image/Torso.jpeg";
+
 import "./about.css";
 function About() {
   return (
@@ -11,7 +11,7 @@ function About() {
       <div className="content row">
         <div className="imagecolum col-md-6 col-sm-12">
           <img className="shadow anim mb-3 img-fluid" src={image} alt="" />
-          <img className="shadow anim mb-3 img-fluid" src={imageTwo} alt="" />
+         
         </div>
         <div className="col-md-6 col-sm-12">
           <p className="text-justify">

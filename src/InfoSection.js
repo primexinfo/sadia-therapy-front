@@ -7,8 +7,8 @@ import "./infosection.css";
 import "./home.css";
 import { Link } from "react-router-dom";
 import { api, IMG_BASE_URL } from "./api/api";
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from "aos";
+import "aos/dist/aos.css";
 const Conteiner = styled.div`
   // padding: 3rem calc((100vh-1300px) / 2);
   display: grid;
@@ -20,9 +20,9 @@ const Conteiner = styled.div`
 `;
 const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
   const [frontBlog, setFrontBlog] = useState([]);
-useEffect(()=>{
-  Aos.init({dureation:2000})
-},[])
+  useEffect(() => {
+    Aos.init({ dureation: 2000 });
+  }, []);
 
   useEffect(() => {
     axios
@@ -39,11 +39,16 @@ useEffect(()=>{
     <section data-aos="fade-up" className="section-info">
       <div className="row">
         <div className="col-md-6">
-          <h2 data-aos="fade-right" className="text-center my-therapy hero-title">Explore my therapy</h2>
+          <h2
+            data-aos="fade-right"
+            className="text-center my-therapy hero-title"
+          >
+            Explore my therapy
+          </h2>
           {frontBlog.map((value) => {
             return (
               <div className="row mb-3">
-                <div className="col-md-3">
+                <div className="col-md-3 p-3">
                   <img
                     className="person-img"
                     to={"/blogs"}
@@ -51,7 +56,7 @@ useEffect(()=>{
                     alt=""
                   />
                 </div>
-                <div className="col-md-9 pr-2">
+                <div className="col-md-9 pr-2 p-3">
                   <h2 className="blog-title">{value.title}</h2>
                   <p dangerouslySetInnerHTML={{ __html: value.sub_title }}></p>
 

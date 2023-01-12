@@ -52,7 +52,7 @@ useEffect(()=>{
                           <img className="wellogoimg" src={logo2} alt="" />
                         </li>
                         <li >
-                          <img className="wellogoimg" src={logo3} alt="" />
+                          <img className="afwellogoimg" src={logo3} alt="" />
                         </li>
                        
                       </ul>

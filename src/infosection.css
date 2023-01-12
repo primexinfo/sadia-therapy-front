@@ -95,7 +95,11 @@ a{
     font-weight: 100;
 }
 .cfwellogoimg{
-    width: 100px;
+    width: 210px;
+    height: auto;
+}
+.afwellogoimg{
+    width: 150px;
     height: auto;
 }
 .wellogoimg{
@@ -105,15 +109,16 @@ a{
 .wellogosec{
   display: flex;
   align-items: center;
- padding-left: 7rem;
+ 
 }
   .wellogosec ul{
     
     /* float: right; */
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+
 
   }
     
@@ -123,7 +128,8 @@ a{
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
-    margin-right: 20px;
+    margin-right: 35px;
+    margin-top: 5px;
  }
 
 @media screen and (max-width: 768px) {

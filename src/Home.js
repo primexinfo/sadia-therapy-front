@@ -142,9 +142,9 @@ function Home({ slides }) {
                       
                       
                     </Content>
-                    <div className="logosec">
-                        <ul >
-                        <li >
+                    <div data-aos="fade-left"  className="logosec">
+                        <ul   >
+                        <li  >
                            <img className="logoimg" src={slide.logo1} alt="" />
                         </li>
                         <li >

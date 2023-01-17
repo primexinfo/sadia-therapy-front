@@ -26,12 +26,12 @@ export const SliderData =[
    title:"Employ the Alternative way to Reflect and Make a Positive Change with Sadia Afrin",
    common:"Master your mind with Solution-Focused Hypnotherapy",
    path:'/homes',
-   lavel:'Contact me',
+   lavel:'Free Discovery Call',
    video: videoThree,
    alt:'relax',
    logo1,
    logo2,
-   logo3
+  
 },
 
 

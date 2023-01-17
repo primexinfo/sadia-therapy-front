@@ -17,6 +17,8 @@ import ScrollToTop from "./ScrollToTop";
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import PriceSection from "./PriceSection";
+import Stepper from "./Stepper";
+import Quote from "./Quote";
 
 // import AudioSection from "./AudioSection";
 
@@ -142,20 +144,7 @@ function Home({ slides }) {
                       
                       
                     </Content>
-                    <div data-aos="fade-left"  className="logosec">
-                        <ul   >
-                        <li  >
-                           <img className="logoimg" src={slide.logo1} alt="" />
-                        </li>
-                        <li >
-                          <img className="logoimg" src={slide.logo2} alt="" />
-                        </li>
-                        <li >
-                          <img className="logoimg" src={slide.logo3} alt="" />
-                        </li>
-                       
-                      </ul>
-                      </div>
+                    
                   </div>
                 )}
               </Slide>
@@ -171,11 +160,12 @@ function Home({ slides }) {
       <InfoSection {...InfoData} />
      
       {/* <AudioSection /> */}
-      <View data-aos="fade-up" />
+      <Stepper/>
       <PriceSection/>
       <Services data-aos="fade-up" />
       {/* <ClientReview/> */}
       {/* <Accordion /> */}
+      <Quote/>
       <Contact data-aos="fade-up" />
     </>
   );

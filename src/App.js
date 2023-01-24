@@ -17,6 +17,7 @@ import AllBlogs from "./AllBlogs";
 import Programs from "./Programs";
 import ProgramSection from "./ProgramSection";
 import PriceSection from "./PriceSection";
+// import Paypal from './../src/payment/Payment'
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
         <Route exact path="/faq" element={<Accordion />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/blogs" element={<AllBlogs />} />
+
         {/* <Route exact path="/blogs" element={<BlogSection {...InfoData} />} /> */}
         <Route exact path="/blog/:id" element={<BlogSection />} />
         <Route exact path="/program/:id" element={<ProgramSection />} />

@@ -9,12 +9,15 @@ import {
   KeyboardTimePicker,
 } from "@material-ui/pickers";
 import "./appointment.css";
+import AnimatedText from 'react-animated-text-content';
 import { BASE_URL } from './api/api';
+import { Link } from "react-router-dom";
 
 const Appoinment = () => {
   const d = new Date();
   const [appointment_name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("")
   const [appointment_date, setDate] = useState(new Date());
   const [appointment_time, setTime] = useState(d.getTime());
 
@@ -25,7 +28,7 @@ const Appoinment = () => {
   function saveAppointment(e) {
     
     e.preventDefault();
-    let data = { appointment_name, phone, appointment_date, appointment_time };
+    let data = { appointment_name, phone, appointment_date, appointment_time, email };
     axios.post(`${BASE_URL}/set-appoint`, data)
       .then( res => 
         alert(res.data)
@@ -59,6 +62,20 @@ const Appoinment = () => {
                 id="name"
                 value={appointment_name}
                 placeholder="Full Name"
+                required=""
+              />
+            </div>
+            <div className="form-group">
+              <input
+                onChange={(e) => {
+                  setEmail(e.target.value, e.preventDefault());
+                }}
+                type="email"
+                className="form-control"
+                name="email"
+                id="email"
+                value={email}
+                placeholder="Enter Your Email"
                 required=""
               />
             </div>
@@ -111,15 +128,38 @@ const Appoinment = () => {
                 </div>
               </div>
             </div>
-            <div className="form-group float-right">
+            <Link to={'/payment'} className="form-group float-right">
               <input
                 type="submit"
                 value="Make an Appointment"
                 className="btn btn-primary sub-button"
               />
-            </div>
+            </Link>
           </form>
+          
         </div>
+        <AnimatedText
+  type="words" // animate words or chars
+  animation={{
+    x: '200px',
+    y: '-20px',
+    scale: 1.1,
+    ease: 'ease-in-out',
+  }}
+  animationType="float"
+  interval={0.06}
+  duration={0.8}
+  tag="p"
+  className="animated-paragraph explore-text"
+  includeWhiteSpaces
+  threshold={0.1}
+  rootMargin="20%"
+> 
+    
+     A mobile number and email must be supplied at the time of booking so the relevant forms can be sent out prior to each appointment.
+</AnimatedText>
+        
+ 
       </div>
     </>
   );

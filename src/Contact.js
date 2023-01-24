@@ -44,23 +44,8 @@ function Contact() {
 					</div>
 				</div>
 				<div className="col-lg-6 col-md-6 d-flex align-items-stretch contact-text">
-					<div className="info-wrap w-100 pl-5">
-						<div className="dbox w-100 d-flex align-items-center">
-							<div className="icon d-flex align-items-center justify-content-center contact-text-phone">
-								<span data-aos="fade-right" className="fa fa-phone"></span>
-							</div>
-							<div className="textphone">
-								<p><span>Phone:</span> <a href="tel://+447944946496">+44 7944 946496</a></p>
-							</div>
-						</div>
-						<div className="dbox w-100 d-flex align-items-center">
-							<div className="icon d-flex align-items-center justify-content-center contact-text-phone">
-								<span data-aos="fade-right" className="fa fa-envelope"></span>
-							</div>
-							<div className="textemail">
-								<p><span>Email:</span> <a href="mailto:sadia.hypnotherapy@gmail.com">sadia.hypnotherapy@gmail.com</a></p>
-							</div>
-						</div>
+					<div data-aos="fade-right" className="info-wrap w-100 pl-5">
+						<h1 className='contact-author'> Sadia Afrin</h1>
 					</div>
 				</div>
 			</div>

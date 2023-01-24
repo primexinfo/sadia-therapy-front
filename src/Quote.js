@@ -3,6 +3,7 @@ import React, {useState, useEffect} from 'react'
 import Aos from "aos";
 import 'aos/dist/aos.css'
 import './quoate.css'
+import logo from '../src/image/sadia-logo.png'
 import {
     MDBCard,
     MDBCardBody,
@@ -40,7 +41,7 @@ import {
               style={{ backgroundColor: "#12375c", borderRadius: "15px" , boxShadow: "box-shadow: 0 0.5rem 3rem 0 rgba(238, 0, 0, 0.1);", border:"none" }}
             >
               <MDBCardBody className="p-5">
-                <MDBIcon data-aos="fade-up" fas icon="quote-left mb-4" size="2x" />
+                <MDBIcon className='qouteicon' data-aos="fade-up" fas icon="quote-left mb-4" size="2x" />
 
                 <p data-aos="fade-up" className="lead">
                 “With hypnosis your mind is relaxed, you are fully present and it's easier to access your inner positive emotions and creative mind.”
@@ -49,7 +50,7 @@ import {
                 <hr />
 
                 <div data-aos="fade-up" className="d-flex justify-content-between">
-                  <p className="mb-0">Sadia Afrin</p>
+              <img src={logo} alt="" />
                   <MDBTypography tag="h6" className="mb-0">
                     <span
                       className="badge rounded-pill"

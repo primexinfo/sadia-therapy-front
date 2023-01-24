@@ -16,7 +16,7 @@ function Navbar() {
     axios
       .get(api.allProgramm)
       .then((res) => {
-        console.log(res.data.data);
+
         setAllProgram(res.data.data);
       })
       .catch((err) => {
@@ -107,11 +107,7 @@ else{
                         Blog
                       </NavLink>
                     </li> */}
-                    <li className="nav-item mr-2">
-                      <NavLink className="nav-link" to="/faq">
-                       FAQ
-                      </NavLink>
-                    </li>
+                    
                     
                     <li className="nav-item mr-2 ">
                       <PackageMenu/>
@@ -121,7 +117,11 @@ else{
                         APPOINTMENT
                       </NavLink>
                     </li>
-
+                    <li className="nav-item mr-2">
+                      <NavLink className="nav-link" to="/faq">
+                       FAQ
+                      </NavLink>
+                    </li>
                     
                     <li className="nav-item">
                       <NavLink className="nav-link" to="/contact">

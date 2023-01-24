@@ -132,6 +132,16 @@ a{
     margin-top: 5px;
  }
 
+.animated-paragraph{
+    margin-top: 70px;
+    font-weight: 500;
+}
+
+ .explore-text{
+    font-size: 20px;
+    font-weight: bold;
+ }
+
 @media screen and (max-width: 768px) {
     .section-info{
         padding-left: 2rem;

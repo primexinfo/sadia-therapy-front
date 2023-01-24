@@ -10,7 +10,69 @@
     transition: all 0.3s ease;
     border-radius: 10px;
   }
+.nav-link{
+  border: none !important;
+  background: none;
+}
+.item:hover{
+  color: #540553 !important;
+  font-size: 15px;
+}
+.nav-link:hover{
+  background: #540553;
+  color: #e0ebec !important;
+}
+.card-title{
+  color: #540553;
+  font-size: 18px;
+  font-weight: bold;
+}
+.card-text{
+  color: #1a3246 !important;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: bold !important;
+}
+.package{
+  opacity: 1;
+  width: 18rem;
+  height: auto;
+}
+.card-img-top{
+  
+  object-fit: cover !important;
+}
+  .price-section{
+    visibility: hidden;
+  }
+.card-body .card-text{
+ color: #540553;
 
+}
+  .session{
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+    width: 50vw;
+    height: 40vh;
+    top: 100px;
+    padding-top: 30px;
+    opacity: 0;
+    background-color: #bb2685;
+  }
+
+  .price-section{
+    position:fixed;
+    right: 0;
+    top: 20px;
+    visibility: visible;
+    width: 30vw;
+    height: 40vh;
+    top: 100px;
+    padding-top: 50px;
+    margin-bottom: 100px !important;
+    opacity: 0;
+  }
   
   .menu-item{
     cursor: pointer;
@@ -100,15 +162,22 @@
   .col .mega-links li a {
     padding: 0 1rem;
   }
-  .menu-item:hover .mega-menu {
+  .menu-item:hover .session {
     top: 50px;
     opacity: 1 !important;
-    visibility: visible;
-   
-    
+    visibility: visible !important;  
+  }
+
+  .menu-item:hover .price-section{
+    visibility: hidden;
   }
   
   .package-content .col .read-more:hover {
     color: #ff652f;
+  }
+
+  .submenu{
+    width: 400px !important;
+    height: 300px !important;
   }
   

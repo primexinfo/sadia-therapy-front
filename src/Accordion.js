@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import { Adata } from "./Adata";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
@@ -6,6 +6,8 @@ import { FiPlus, FiMinus } from "react-icons/fi";
 import image from "./image/am1.JPG";
 import ScrollToTop from "./ScrollToTop";
 import './accordion.css'
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const AccordionSection = styled.div`
   display: flex;
@@ -101,7 +103,7 @@ const Dropdown = styled.div`
 
 const Accordion = () => {
   const [clicked, setClicked] = useState(false);
-
+  
   const toggle = (index) => {
     if (clicked === index) {
       //if clicked question is already active, then close it
@@ -110,7 +112,9 @@ const Accordion = () => {
 
     setClicked(index);
   };
-
+useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
   return (
     <>
       <ScrollToTop />{" "}
@@ -121,10 +125,11 @@ const Accordion = () => {
         </div>
         <div className="descSection" >
           <div className="hypno-img">
-            <p className="mx-5  ">
-            <h3>
+            <h3 data-aos="fade-up" className="mx-5">
               <b>What is Hypnosis?</b>
-            </h3>{" "}
+            </h3>
+            <p data-aos="fade-left" className="mx-5 paraone ">
+            {" "}
             <img className=" mx-5 person-img float-start" src="https://images.unsplash.com/photo-1600778321438-4785de7fb702?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
             The public perception of hypnosis is one that is concerned with
             stage shows and mysticism—think Derren Brown, for instance. In the
@@ -137,14 +142,14 @@ const Accordion = () => {
             are oftentimes exaggerated and can seem frightening to people, but
             it is important to remember that hypnosis has never hurt anyone. It
             is not mind-control and you cannot get stuck in it. It is a
-            medically approved 1 , legitimate therapy, and has
+            medically approved <sup>1</sup>  , legitimate therapy, and has
             scientifically-backed health benefits.
             <br /> <br />
             The term hypnosis comes from the Greek word ‘hypnos,’ meaning sleep.
             However, while sleep is a state of unconsciousness, hypnosis allows
             you to control and focus your subconsciousness. Unlike many other
             therapies, it contrives situations in which people respond to
-            imaginative suggestions 2 and can be doubly effective because of
+            imaginative suggestions <sup>2</sup>  and can be doubly effective because of
             this. Hypnosis is a very powerful tool that can be used to boost the
             effects of psychotherapy and can be used as complementary and/or an
             alternative to medicinal treatment.
@@ -160,11 +165,12 @@ const Accordion = () => {
           <br /> <br /> <br />
           </div>
           
-          <h3 className="mx-5">
+          <h3 data-aos="fade-up" className="mx-5 ">
             <b>what is Conscious and subconscious mind?</b>
-          </h3>{" "}
+          </h3>{" "} 
+          <p data-aos="fade-right" className="mx-5 paratwo">
           <img className="mx-5 person-img float-end " src="https://images.unsplash.com/photo-1605902394069-ff2ae2430e62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" alt="" />
-          <p className="mx-5">
+         
             The Conscious Mind is where we spend most of our time, but it is
             actually the weakest part of our mind. It is the rational,
             analytical part of the mind. It controls our thinking, judging, and
@@ -180,10 +186,10 @@ const Accordion = () => {
             subconscious mind.
           </p>{" "}
           <br /> <br />
-          <h3 className="mx-5">
+          <h3 data-aos="fade-up" className="mx-5">
             <b>How Hypnotherapy work?</b>{" "}
           </h3>
-          <p className="mx-5">
+          <p data-aos="fade-left" className="mx-5 parathree">
             {" "}
             Hypnotherapy generally refers to the therapeutic use of hypnosis, to
             help people to change habits, lessen symptoms, or treat a variety of
@@ -202,11 +208,11 @@ const Accordion = () => {
             abolished or altered.{" "}
           </p>{" "}
           <br /> <br />
-          <h3 className="mx-5">
+          <h3 data-aos="fade-up" className="mx-5">
             {" "}
             <b>What is Solution-Focused Hypnotherapy?</b>
           </h3>
-          <p className="mx-5">
+          <p data-aos="fade-right" className="mx-5 parafour">
             {" "}
             Solution-Focused Hypnotherapy involves a facilitating role where the
             client reconnoitres their way of solving the problems or issues they
@@ -220,10 +226,10 @@ const Accordion = () => {
             small steps and identifying and amplifying changes made.{" "}
           </p>{" "}
           <br /> <br />
-          <h3 className="mx-5">
+          <h3 data-aos="fade-up" className="mx-5">
             <b>What is therapy with me like?</b>
           </h3>
-          <p className="mx-5">
+          <p data-aos="fade-left" className="mx-5 parafive">
             Our first session involves gathering information and explaining how
             the mind works. While taking the time to know and understand you, I
             will focus on your strengths and resilience, and build a

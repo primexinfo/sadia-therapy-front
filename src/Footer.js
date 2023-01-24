@@ -9,6 +9,7 @@ import {
   FaGithub,
   FaLinkedin,
   FaPhone,
+  FaTiktok,
 } from "react-icons/fa";
 import Accordion from "./Accordion";
 
@@ -22,7 +23,7 @@ function Footer() {
         <div className="footerContainer">
           <div className="footerRow">
             <div data-aos="fade-up" className="footer-col">
-              <h4>Company</h4>
+              
               <ul>
                 <li>
                   <Link to={"/about"}><a href="">about</a></Link>
@@ -37,7 +38,7 @@ function Footer() {
               </ul>
             </div>
             <div data-aos="fade-up" className="footer-col">
-              <h4>get help</h4>
+            
               <ul>
                 <li>
                   <Link to={"/faq"}>
@@ -65,15 +66,17 @@ function Footer() {
                 <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fsadiaafrinhypnotherapy%2F%3Ffbclid%3DIwAR24aDSoqvqOR5YrIjc4XvB3wPqC4G5jJ26S4KLG256ON7Kz7kAN-u88W4g&h=AT04MmgFqj1AJHKgIH6_jN4sW3uqxaCfH4_0tJWNMVxMw6n-axgxwmvnyBAqSjx_50N7ZGCNbWn8Qu3q0I0SX10cUFNop4QnUGD2r16oQhUD6dFUX2iN9mXlg8natEZvau1LWw">
                   <FaInstagram />
                 </a>
-                {/* <a href="">
-                  <FaGithub />
-                </a> */}
+                <a href="http://www.tiktok.com/@sadiaafrintherapy">
+                  <FaTiktok />
+                </a>
                 <a href="">
                   <FaLinkedin />
                 </a>
               </div>
             </div>
           </div>
+          <h5 className="reserved">© all rights reserved by sadiaafrin.com 2023</h5>
+           <h5 className="rights">Design & Developed by  <a href="https://primex-bd.com/#home">Primex  Information Systems Limited</a></h5>
         </div>
       </footer>
     </>

@@ -4,26 +4,26 @@ import "aos/dist/aos.css";
 import './stepper.css'
 const Stepper = () => {
     useEffect(() => {
-        Aos.init({ duration: 2000 });
+        Aos.init({ duration: 4000 });
       }, []);
   return (
     <div class="wrapper">
   <ol class="c-stepper">
-  <li class="c-stepper__item"><h1 data-aos="fade-right"   class="c-stepper__title"> Step 1</h1>
+  <li class="c-stepper__item"><h1 data-aos="fade-right"   class="c-stepper__title">1</h1>
         <div  data-aos="fade-left" class="c-stepper__content">
             
             <h2 class='c-stepper__package-name'>Free No-Obligation 20-minute Discovery Call</h2>
             <p class='c-stepper__package-desc'>No obligation 20 minutes consultation is available for clients. This will allow us to find out if we are the right fit for each other. You may ask questions to have an idea about my services. I will find out about your pain points to provide the right solution for you. If it is not a good fit, I will point you in the right direction. If we are a good fit to embark on working together, I will send you consent and intake forms which need to be signed and returned with your payment before scheduling a session with me.</p>
         </div>
     </li>
-    <li class="c-stepper__item"><h1 data-aos="fade-right"   class="c-stepper__title">Step 2</h1>
+    <li class="c-stepper__item"><h1 data-aos="fade-right"   class="c-stepper__title">2</h1>
         <div data-aos="fade-left" class="c-stepper__content">
             
             <h2 class='c-stepper__package-name'>Hypnotherapy Session Online</h2>
             <p class='c-stepper__package-desc'>The first session which lasts for 1 hour, involves gathering information and explaining how the mind works. While taking the time to know and understand you, I will focus on your strengths and resilience, and build a relationship with you. Consequent sessions are focused on exploring solutions and applying hypnosis. Each session is productively engaging so you can walk away with a sense of relief, peace, and knowledge for your support. A confidential space is offered to explore the thoughts, feelings, and challenges in your life and help you find confidence, happiness, and peace by equipping you with the tools you need to manage your emotions and know yourself. I use creative techniques, tailoring your needs and personality focusing on brain function and positivity.</p>
         </div>
     </li>
-    <li class="c-stepper__item"><h1 data-aos="fade-right"   class="c-stepper__title">Step 3</h1>
+    <li class="c-stepper__item"><h1 data-aos="fade-right"   class="c-stepper__title">3</h1>
         <div data-aos="fade-left" class="c-stepper__content">
             
             <h2 class='c-stepper__package-name'>An Audio of Hypnosis</h2>
@@ -32,7 +32,7 @@ const Stepper = () => {
 </p>
         </div>
     </li>
-    <li class="c-stepper__item">  <h1 data-aos="fade-right"  class="c-stepper__title">Step 4</h1>
+    <li class="c-stepper__item">  <h1 data-aos="fade-right"  class="c-stepper__title">4</h1>
         <div data-aos="fade-left" class="c-stepper__content">
           
             <h2 class='c-stepper__package-name'>Post-Session Follow-Up</h2>

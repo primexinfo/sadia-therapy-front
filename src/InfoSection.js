@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { api, IMG_BASE_URL } from "./api/api";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import AnimatedText from 'react-animated-text-content';
 const Conteiner = styled.div`
   // padding: 3rem calc((100vh-1300px) / 2);
   display: grid;
@@ -45,28 +46,51 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
           >
             Explore my therapy
           </h2>
-          {frontBlog.map((value) => {
-            return (
-              <div className="row mb-3">
-                <div className="col-md-3 p-3">
-                  <img
-                    className="person-img"
-                    to={"/blogs"}
-                    src={`${IMG_BASE_URL}/blogs/${value.photo}`}
-                    alt=""
-                  />
-                </div>
-                <div className="col-md-9 pr-2 p-3">
-                  <h2 className="blog-title">{value.title}</h2>
-                  <p dangerouslySetInnerHTML={{ __html: value.sub_title }}></p>
+          <AnimatedText
+  type="words" // animate words or chars
+  animation={{
+    x: '200px',
+    y: '-20px',
+    scale: 1.1,
+    ease: 'ease-in-out',
+  }}
+  animationType="float"
+  interval={0.06}
+  duration={0.8}
+  tag="p"
+  className="animated-paragraph"
+  includeWhiteSpaces
+  threshold={0.1}
+  rootMargin="20%"
+>  
 
-                  <Button className="home-button" to={`/blog/${value.id}`}>
-                    Read More
-                  </Button>
-                </div>
-              </div>
-            );
-          })}
+          My sessions are online therefore during any restrictions, and/or clients who have chronic pain and mobility issues can have full benefits where the treatment is essential to their quality of life.
+         
+         
+
+</AnimatedText>
+<AnimatedText
+  type="words" // animate words or chars
+  animation={{
+    x: '200px',
+    y: '-20px',
+    scale: 1.1,
+    ease: 'ease-in-out',
+  }}
+  animationType="float"
+  interval={0.06}
+  duration={0.8}
+  tag="p"
+  className="animated-paragraph explore-text"
+  includeWhiteSpaces
+  threshold={0.1}
+  rootMargin="20%"
+> 
+       My dream is to live in a world where mental health does not hinder people's abilities to live vigorous and fulfilling lives, and I am ready to fully dedicate my efforts to make that happen. Are you?
+
+</AnimatedText>
+
+
         </div>
 
         <div className="col-md-6 pr-2">

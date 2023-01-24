@@ -4,6 +4,7 @@
 @import url("https:/cdn.syncfusion.com/ej2/material.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   margin: 0;
@@ -311,6 +312,13 @@ label {
 .contactForm .inputBox input[type="submit"]:focus {
   transform: translateY(-5px);
 }
+
+.contact-author{
+  font-family: 'Pacifico', cursive;
+  color: #bb2685;
+  font-size: 100px;
+
+}
 @media (max-width: 991px) {
   .contact {
     padding: 50px;
@@ -398,6 +406,24 @@ label {
 .social-links {
   margin-left: 15px;
 }
+.footer-follow{
+  margin-top: -33px;
+}
+.rights{
+  float: right;
+  padding: 10px;
+  margin-right: 30px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+.reserved{
+  float: left;
+  padding: 10px;
+  margin-right: 20px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
 .heading h1 {
   font-weight: 500;
   margin: 30px 0;

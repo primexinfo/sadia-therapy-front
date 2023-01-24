@@ -23,14 +23,10 @@ const PriceSection = () => {
                     <i class="fa-solid fa-face-grin-beam"></i>
                         <div class="price-value"> ₤40.00 <span class="month">relaxation session</span> </div>
                     </div>
-                    <h3 class="heading">Deep relaxation</h3>
+                   
                     <div class="pricing-content">
                         <ul>
-                        <li>Focusing on your breathing
-
-Progressive muscle relaxation — tighten and relax your muscles throughout your body
-
-Visualisation — imagine a relaxing place and focus on the details</li>
+                        <li>Deep relaxation sessions provide a warm space so that the clients take control of finding a solution while relaxing from the comfort of their couch. Sessions are designed to calm both mind and body. </li>
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
@@ -46,14 +42,16 @@ Visualisation — imagine a relaxing place and focus on the details</li>
                     <i class="fa-solid fa-face-grimace"></i>
                         <div class="price-value"> ₤120.00 <span class="month">single session</span> </div>
                     </div>
-                    <h3 class="heading">Anxity and Stress</h3>
+                  
                     <div class="pricing-content">
                         <ul>
-                        <li>A hypnotic approach to BFRBs may involve: Reducing stress. Stress and anxiety are common triggers for BFRBs. Hypnosis helps to regulate the autonomic nervous system by increasing parasympathetic activity.</li>
+                        <li>Single Sessions are ideal for working with stress, limiting beliefs, and anxiety.
+Time invested mostly to build a rapport by taking personal information and helping the client to understand how our mind works.
+</li>
                         </ul>
                     </div>
                     <div class="pricingTable-signup">
-                        <a href="/appointment">Book Now</a>
+                        <a data-toggle="modal" data-target="#staticBackdrop" href="/appointment">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -63,13 +61,12 @@ Visualisation — imagine a relaxing place and focus on the details</li>
                     <i class="fa-solid fa-face-tired"></i>
                         <div class="price-value"> ₤300.00 <span class="month">three session package</span> </div>
                     </div>
-                    <h3 class="heading">phobias and fears</h3>
+                   
                     <div class="pricing-content">
                         <ul>
                             <li>
 
-Break and update these patterns of behaviour and take full control of your life.
- tools and techniques of hypnotherapy to transform your subconscious patterns and eradicate negative thoughts. </li>
+                            This package is suitable for anyone who wants to get in-depth and continuous guidance to overcome the challenges they are facing like relationship issues, depression, chronic pain, etc. </li>
                           
                         </ul>
                     </div>
@@ -84,14 +81,11 @@ Break and update these patterns of behaviour and take full control of your life.
                     <i class="fa-solid fa-face-smile-beam"></i>
                         <div class="price-value"> ₤500.00 <span class="month">five session package</span> </div>
                     </div>
-                    <h3 class="heading">Sleep Improvement</h3>
+                  
                     <div class="pricing-content">
                         <ul>
-                        <li>Realise that sound sleep is possible without medications.
-
-Learn how hypnosis can help you calm your mind and stop overthinking in bed.
-
-Discover how to shift your behaviour and build better sleep patterns.    
+                        <li>This package is ideal for someone who wants a long-lasting transformation such as weight management, treating insomnia, etc.
+The first session is involved to build a rapport by taking information .
 </li>
                         </ul>
                     </div>
@@ -103,7 +97,8 @@ Discover how to shift your behaviour and build better sleep patterns.
         </div>
     </div>
 </div>
-<a target="_blank" href="#" className="white-mode">MORE ></a>
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true"> <div class="modal-dialog"> <div class="modal-content"> <div class="modal-body"> <div class="text-right"> <i class="fa fa-close close" data-dismiss="modal"></i> </div> <div class="tabs mt-3"> <ul class="nav nav-tabs" id="myTab" role="tablist"> <li class="nav-item" role="presentation"> <a class="nav-link active" id="visa-tab" data-toggle="tab" href="#visa" role="tab" aria-controls="visa" aria-selected="true"> <img src="https://i.imgur.com/sB4jftM.png" width="80"/> </a> </li> <li class="nav-item" role="presentation"> <a class="nav-link" id="paypal-tab" data-toggle="tab" href="#paypal" role="tab" aria-controls="paypal" aria-selected="false"> <img src="https://i.imgur.com/yK7EDD1.png" width="80"/> </a> </li> </ul> <div class="tab-content" id="myTabContent"> <div class="tab-pane fade show active" id="visa" role="tabpanel" aria-labelledby="visa-tab"> <div class="mt-4 mx-4"> <div class="text-center"> <h5>Credit card</h5> </div> <div class="form mt-3"> <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"/> <span>Cardholder Name</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"/> <span>Card Number</span> <i class="fa fa-eye"></i> </div> <div class="d-flex flex-row"> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"/> <span>Expiration Date</span> </div> <div class="inputbox"> <input type="text" name="name" min="1" max="999" class="form-control" required="required"/> <span>CVV</span> </div> </div> <div class="px-5 pay"> <button class="btn btn-success btn-block">Add card</button> </div> </div> </div> </div> <div class="tab-pane fade" id="paypal" role="tabpanel" aria-labelledby="paypal-tab"> <div class="px-5 mt-5"> <div class="inputbox"> <input type="text" name="name" class="form-control" required="required"/> <span>Paypal Email Address</span> </div> <div class="pay px-5"> <a href="https://www.paypal.com/paypalme/sat1200?country.x=GB&locale.x=en_GB" class="btn btn-primary btn-block">Pay Now</a> </div> </div> </div> </div> </div> </div> </div> </div>
+</div>
 </>
 
     

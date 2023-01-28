@@ -92,6 +92,11 @@
   color: #fff;
   
 }
+.megapackage{
+  margin-left: -27px;
+
+  cursor: pointer;
+}
 
 
 @keyframes scrollRight{

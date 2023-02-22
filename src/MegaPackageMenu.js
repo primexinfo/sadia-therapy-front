@@ -5,6 +5,7 @@ import "./mega.css";
 import "./pricesection.css";
 import "./infosection.css";
 import { Button } from "./Button";
+import {RiArrowDropDownFill} from 'react-icons/ri'
 
 const MegaPackageMenu = () => {
   return (
@@ -13,8 +14,11 @@ const MegaPackageMenu = () => {
        
           <ul class="ruby-menu">
             <li class="ruby-menu-mega-blog package">
-              <li className="nav-link" href="#">PACKAGES</li>
-              <div style={{height: "200px", width: "670px"}} class="">
+              <li className="nav-link" href="#">PACKAGES🢓
+              
+              </li>
+              
+              <div style={{height: "200px", width: "670px",  }} class="">
                 <ul class="ruby-menu-mega-blog-nav">
                   <li class="ruby-active-menu-item">
                     <a href="#">1*30 Minutes Session</a>

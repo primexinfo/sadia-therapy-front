@@ -77,7 +77,7 @@ Bespoke <br />hypnosis  audio can be offered if <br /> required.
     <p className="card-text">Offering a twenty-five minutes <br /> hypnosis recording. <br />
 Bespoke hypnosis audio can <br /> be offered if required. <br />
 Unlimited support via WhatsApp <br /> or any preferred media.</p>
-    <Button to={'/appointment'} className='home-button'>Book now</Button>
+    <Button to={'/appointment'} className='home-button'>FREE DISCOVERY CALL</Button>
   </div>
   </div>
 

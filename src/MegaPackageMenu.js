@@ -19,7 +19,7 @@ const MegaPackageMenu = () => {
               <BiChevronDown />
             </li>
 
-            <div style={{ height: "200px", width: "670px" }} class="">
+            <div style={{ height: "200px", width: "670px" }} className="">
               <ul class="ruby-menu-mega-blog-nav">
                 <li class="ruby-active-menu-item">
                   <Link to={"/appointment"}>
@@ -48,7 +48,7 @@ const MegaPackageMenu = () => {
                           designed to calm both mind and body.
                           <br />
                           <Button to={"/appointment"} className="home-button">
-                            Book now
+                          Free Discovery Call
                           </Button>
                         </span>
                       </div>
@@ -83,7 +83,7 @@ const MegaPackageMenu = () => {
                           helping the client to understand how our mind works.
                           <br />
                           <Button to={"/appointment"} className="home-button">
-                            Book now
+                            Free Discovery Call
                           </Button>
                         </span>
                       </div>
@@ -113,7 +113,7 @@ const MegaPackageMenu = () => {
                           depression, chronic pain, etc.
                           <br />
                           <Button to={"/appointment"} className="home-button">
-                            Book now
+                          Free Discovery Call
                           </Button>
                         </span>
                       </div>
@@ -143,7 +143,7 @@ const MegaPackageMenu = () => {
                           to build a rapport by taking information .
                           <br />
                           <Button to={"/appointment"} className="home-button">
-                            Book now
+                          Free Discovery Call
                           </Button>
                         </span>
                       </div>

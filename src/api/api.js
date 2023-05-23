@@ -1,5 +1,5 @@
 export const BASE_URL = `https://admin.sadiatherapy.com/api`;
-export const IMG_BASE_URL = `https://admin.sadiatherapy.com/assets/images`;
+export const IMG_BASE_URL = `https://soft.sadiatherapy.com/assets/images`;
 export const api = {
   blogCategories: `${BASE_URL}/category`,
   frontBlogs: `${BASE_URL}/front-blogs`,

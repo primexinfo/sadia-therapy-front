@@ -9,12 +9,9 @@ function About() {
         <h1 className="hero-title">About Me</h1>
       </div>
       <div className="content row">
-        <div className="imagecolum col-md-6 col-sm-12">
-          <img className="shadow anim mb-3 img-fluid" src={image} alt="" />
-         
-        </div>
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-12 col-sm-12">
           <p className="text-justify">
+          <img className="img-fluid float-start wd" src={image} alt="" />
             <strong>
               {" "}
               Hello, I am Sadia Afrin, a qualified Clinical Solution Focused
@@ -61,7 +58,9 @@ function About() {
             <br />
             <br />
             <strong> My qualification and training:</strong>
-            <br />I trained with the prestigious Clifton Practice Hypnotherapy
+            <br />
+            I have been awarded a Professional Hypnotherapy Diploma by the esteemed Jacquin Hypnosis Academy. I trained with the prestigious Clifton Practice Hypnotherapy Training school in Manchester where I received my Diploma in Solution Focused Hypnotherapy (DSFH). I have achieved NCFE Level 2 Certificate in Counselling Skills at Trafford College. I am also a registered member of The Association for Solution-Focused Hypnotherapy (AfSFH). As a registered and accredited Clinical Hypnotherapist, I am required to participate in Continuing Professional Development (CPD) through workshops, courses, supervision and personal development. I have an enhanced DBS certificate for working with vulnerable adults and children. And I’m professionally insured by Holistic Services Insurance. I am committed to the highest standards of service therefore, I learn every day and update my skills regularly.
+
           </p>
         </div>
       </div>

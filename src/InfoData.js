@@ -15,7 +15,7 @@ logo1,
    logo3,
     logo4
 }
-export const InfoDataTwo ={
+export const InfoDataTwo = {
 heading:'Phobias and Fears',
 peragraphOne:'Do you find yourself going to great lengths to avoid certain situations? Even thinking about it makes your mind panic?',
 reverse:false,

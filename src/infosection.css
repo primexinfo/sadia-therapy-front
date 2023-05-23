@@ -1,157 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
 
-.section-info{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-    
-}
-.welcome{
-    padding-left: 0.1rem !important;
-}
-.single-blog{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.blog-margin{
-    margin-bottom: 3rem;
-    border-bottom: 1px;
-}
-.hero-title{
-    color: #540553;
-    margin-top: 1.5rem;
-    font-size: 2.5rem;
-    font-family: YesterYear;
-    
-}
-.hero-title::before {
-    content: "";
-    position: fixed;
-    display: flex;
-    align-content: center;
-    left: 0;
-    bottom: -10px;
-    background-color: #972853;
-    height: 2px;
-    box-sizing: border-box;
-    width: 100%;
-  }
-.blog-title{
-    /*color: #b97fb8;*/
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-.blog-section{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-}
-.blog-section h1{
-    margin-left: 3rem;
-}
-.section-info{
-    padding-left: 2rem;
-    /*padding-bottom: 2rem;*/
-}
-
-
-  .send-button {
-    color: #ffffff !important;
-      background-color:#540553;
-  }
-.contact-text{
-    padding-left: 100px;
-}
-.contact-text-phone{
-    margin-right: 30px;
-}
-.fa{
-    -webkit-font-smoothing: antialiased;
-    display: var(--fa-display,inline-block);
-    font-size: 20px;
-    margin-bottom: 7px;
-    font-style: normal;
-    font-variant: normal;
-    line-height: 1.5;
-    text-rendering: auto;
-}
-.welcome-text{
-    font-family: 'Fira Sans', sans-serif;
-    font-size: 1rem;
-    margin-right: 2rem;
-    text-align: justify;
-    text-shadow: #540553;
-    font-size: 14.7px;
-    font-weight: 500;
-}
-a{
-    text-decoration: none !important;
-    color: #540553;
-}
-.str{
-    font-size: 30px;
-    font-weight: 100;
-}
-.cfwellogoimg{
-    width: 210px;
-    height: auto;
-}
-.afwellogoimg{
-    width: 150px;
-    height: auto;
-}
-.wellogoimg{
-    width: 80px;
-    height: auto;
-  }
-.wellogosec{
+.section-info {
   display: flex;
   align-items: center;
- 
+  justify-content: center;
+  margin-top: 0.9rem;
 }
-  .wellogosec ul{
-    
-    /* float: right; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 74px;
-
-  }
-    
-  .wellogosec li{
-    cursor: pointer;
-    list-style: none;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    margin-right: 35px;
-    margin-top: 5px;
- }
-
-.animated-paragraph{
-    margin-top: 70px;
-    font-weight: 500;
+.welcome {
+  padding-left: 0.1rem !important;
+}
+.single-blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-margin {
+  margin-bottom: 3rem;
+  border-bottom: 1px;
+}
+.hero-title {
+  color: #540553;
+  margin-top: 3.9rem;
+  font-size: 2.5rem;
+  font-family: YesterYear;
+}
+.hero-title::before {
+  content: "";
+  position: fixed;
+  display: flex;
+  align-content: center;
+  left: 0;
+  bottom: -10px;
+  background-color: #972853;
+  height: 2px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.blog-title {
+  /*color: #b97fb8;*/
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.blog-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.blog-section h1 {
+  margin-left: 3rem;
+}
+.section-info {
+  padding-left: 2rem;
+  /*padding-bottom: 2rem;*/
 }
 
- .explore-text{
-    font-size: 20px;
-    font-weight: bold;
- }
+.send-button {
+  color: #ffffff !important;
+  background-color: #540553;
+}
+/* .contact-text {
+  padding-left: 100px;
+} */
+.contact-text-phone {
+  margin-right: 30px;
+}
+.fa {
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-size: 20px;
+  margin-bottom: 7px;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1.5;
+  text-rendering: auto;
+}
+.welcome-text {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1rem;
+  margin-right: 2rem;
+  text-align: justify;
+  text-shadow: #540553;
+  font-size: 14.7px;
+  font-weight: 500;
+}
+a {
+  text-decoration: none !important;
+  color: #540553;
+}
+.str {
+  font-size: 30px;
+  font-weight: 100;
+}
+.cfwellogoimg {
+  width: 210px;
+  height: auto;
+}
+.afwellogoimg {
+  width: 150px;
+  height: auto;
+}
+.wellogoimg {
+  width: 80px;
+  height: auto;
+}
+.wellogosec {
+  display: flex;
+  align-items: center;
+}
+.wellogosec ul {
+  /* float: right; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 74px;
+}
+
+.wellogosec li {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-right: 35px;
+  margin-top: 5px;
+}
+
+.animated-paragraph {
+  margin-top: 70px;
+  font-weight: 500;
+}
+
+.welcome {
+  margin-top: 3rem;
+}
+
+.explore-text {
+  font-size: 20px;
+  font-weight: bold;
+}
 
 @media screen and (max-width: 768px) {
-    .section-info{
-        padding-left: 2rem;
-        padding-right: 2rem;
-        padding-bottom: 2rem;
-    }
-    .contact-text{
-        padding-left: 13px;
-    }
-    .contact-text-phone{
-        margin-right: 10px;
-    }
+  .section-info {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+  }
+  .contact-text {
+    padding-left: 13px;
+  }
+  .contact-text-phone {
+    margin-right: 10px;
+  }
 }

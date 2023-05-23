@@ -6,7 +6,9 @@ import "./navbar.css";
 import { NavDropdown } from "react-bootstrap";
 import { FaPhone } from "react-icons/fa";
 import logo from '../src/image/sadia-logo.png'
-import PackageMenu from "./PackageMenu";
+// import PackageMenu from "./MegaPackageMenu";
+import MegaPackageMenu from "./MegaPackageMenu";
+import MegaServiceMenu from "./MegaServiceMenu";
 
 function Navbar() {
   const [program, setAllProgram] = useState([]);
@@ -71,15 +73,20 @@ else{
                         HOME
                       </NavLink>
                     </li>
+                    <li className="nav-item mr-2 megapackage ">
+                      <MegaPackageMenu/>
+                    </li>
                     <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/About">
                         ABOUT ME
                       </NavLink>
                     </li>
-                    <li className="nav-item dropdown mr-2">
+                    
+                    <li className="nav-item dropdown mr-2 megapackage">
+                      <MegaServiceMenu/>
                       {/* <NavLink className="nav-link dropdown-toggle" data-toggle="dropdown" to="/Programs"> */}
 
-                      <NavDropdown
+                      {/* <NavDropdown
                      
                         title="SERVICES"
                         id="collasible-nav-dropdown nav-link"
@@ -98,7 +105,7 @@ else{
                             </>
                           );
                         })}
-                      </NavDropdown>
+                      </NavDropdown> */}
 
                       {/* </NavLink> */}
                     </li>
@@ -109,9 +116,7 @@ else{
                     </li> */}
                     
                     
-                    <li className="nav-item mr-2 ">
-                      <PackageMenu/>
-                    </li>
+                   
                     <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/appointment">
                         APPOINTMENT

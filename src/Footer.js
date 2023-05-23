@@ -1,8 +1,8 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import {} from "@fortawesome/free-solid-svg-icons";
 import Aos from "aos";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import {
   FaFacebook,
   FaInstagram,
@@ -14,50 +14,42 @@ import {
 import Accordion from "./Accordion";
 
 function Footer() {
-  useEffect(()=>{
-    Aos.init({duration:2000})
-  },[])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <footer className="footer">
         <div className="footerContainer">
-          <div className="footerRow">
-            <div data-aos="fade-up" className="footer-col">
-              
+          <div className="row">
+            <div data-aos="fade-up" className=" footer-menu col-9">
               <ul>
                 <li>
-                  <Link to={"/about"}><a href="">about</a></Link>
-                  
+                  <Link to={"/about"}>
+                    <a href="">About</a>
+                  </Link>
                 </li>
                 {/* <li>
                   <a href="">services</a>
                 </li> */}
                 <li>
-                  <a href="">privacy policy</a>
+                  <a href="">Privacy Policy</a>
                 </li>
-              </ul>
-            </div>
-            <div data-aos="fade-up" className="footer-col">
-            
-              <ul>
                 <li>
                   <Link to={"/faq"}>
                     <a href="">FAQ</a>{" "}
                   </Link>
                 </li>
+
                 {/* <li>
-                  <Link to={""}>
-                    <a href="">programs</a>{" "}
-                  </Link>
-                </li> */}
-                <li>
                   <Link to={""}>
                     <a href="">payment options</a>{" "}
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
-            <div data-aos="fade-up" className="footer-col footer-follow">
+
+            <div data-aos="fade-up" className="footer-col col-3 footer-follow">
               <h4>Follow Us</h4>
               <div className="social-links">
                 <a href="https://www.facebook.com/sadia.hyp">
@@ -75,8 +67,15 @@ function Footer() {
               </div>
             </div>
           </div>
-          <h5 className="reserved">© all rights reserved by sadiaafrin.com 2023</h5>
-           <h5 className="rights">Design & Developed by  <a href="https://primex-bd.com/#home">Primex  Information Systems Limited</a></h5>
+          <h5 className="reserved">
+            © all rights reserved by sadiatherapy.com 2023
+          </h5>
+          <h5 className="rights">
+            Design & Developed by{" "}
+            <a href="https://primex-bd.com/#home">
+              Primex Information Systems Limited
+            </a>
+          </h5>
         </div>
       </footer>
     </>

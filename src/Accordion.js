@@ -130,7 +130,7 @@ useEffect(()=>{
             </h3>
             <p data-aos="fade-left" className="mx-5 paraone ">
             {" "}
-            <img className=" mx-5 person-img float-start" src="https://images.unsplash.com/photo-1600778321438-4785de7fb702?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+            <img className="mx-5 person-img float-start img-fluid" src="https://images.unsplash.com/photo-1600778321438-4785de7fb702?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
             The public perception of hypnosis is one that is concerned with
             stage shows and mysticism—think Derren Brown, for instance. In the
             past, recipients of hypnosis have claimed that they felt various

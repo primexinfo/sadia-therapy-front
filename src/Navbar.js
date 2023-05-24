@@ -73,53 +73,25 @@ else{
                         HOME
                       </NavLink>
                     </li>
+                    <li className="nav-item dropdown mr-2 megapackage">
+                      <MegaServiceMenu/>
+                    </li>
+                    <li className="nav-item mr-2 ">
+                      <NavLink className="nav-link" to="/testimonial">
+                      TESTIMONIAL
+                      </NavLink>
+                    </li>
                     <li className="nav-item mr-2 megapackage ">
                       <MegaPackageMenu/>
                     </li>
                     <li className="nav-item mr-2">
-                      <NavLink className="nav-link" to="/About">
-                        ABOUT ME
-                      </NavLink>
-                    </li>
-                    
-                    <li className="nav-item dropdown mr-2 megapackage">
-                      <MegaServiceMenu/>
-                      {/* <NavLink className="nav-link dropdown-toggle" data-toggle="dropdown" to="/Programs"> */}
-
-                      {/* <NavDropdown
-                     
-                        title="SERVICES"
-                        id="collasible-nav-dropdown nav-link"
-                        show={show}
-                        onMouseEnter={showDropdown}
-                        onMouseLeave={hideDropdown}
-                      >
-                        {program.map((val, ind) => {
-                          return (
-                            <>
-                              <NavDropdown.Item className="prog" href={`/program/${val.id}`}><i class="fa-solid fa-angles-right navicon"></i> 
-                                {val.title} 
-                                <NavDropdown.Divider />
-                              </NavDropdown.Item>
-                              
-                            </>
-                          );
-                        })}
-                      </NavDropdown> */}
-
-                      {/* </NavLink> */}
-                    </li>
-                    {/* <li className="nav-item mr-2 ">
-                      <NavLink className="nav-link" to="/blogs">
-                        Blog
-                      </NavLink>
-                    </li> */}
-                    
-                    
-                   
-                    <li className="nav-item mr-2">
                       <NavLink className="nav-link" to="/appointment">
                         APPOINTMENT
+                      </NavLink>
+                    </li>
+                    <li className="nav-item mr-2">
+                      <NavLink className="nav-link" to="/About">
+                        ABOUT ME
                       </NavLink>
                     </li>
                     <li className="nav-item mr-2">

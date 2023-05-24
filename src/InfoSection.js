@@ -47,49 +47,48 @@ const InfoSection = ({ heading, peragraphOne, reverse, image }) => {
             Explore my therapy
           </h2>
           <AnimatedText
-  type="words" // animate words or chars
-  animation={{
-    x: '200px',
-    y: '-20px',
-    scale: 1.1,
-    ease: 'ease-in-out',
-  }}
-  animationType="float"
-  interval={0.06}
-  duration={0.8}
-  tag="p"
-  className="animated-paragraph"
-  includeWhiteSpaces
-  threshold={0.1}
-  rootMargin="20%"
->  
+            type="words" // animate words or chars
+            animation={{
+              x: '200px',
+              y: '-20px',
+              scale: 1.1,
+              ease: 'ease-in-out',
+            }}
+            animationType="float"
+            interval={0.06}
+            duration={0.8}
+            tag="p"
+            className="animated-paragraph"
+            includeWhiteSpaces
+            threshold={0.1}
+            rootMargin="20%"
+          >  
+                    My sessions are online therefore during any restrictions, and/or clients who have chronic pain and mobility issues can have full benefits where the treatment is essential to their quality of life.
+          </AnimatedText>
+          <AnimatedText
+            type="words" // animate words or chars
+            animation={{
+              x: '200px',
+              y: '-20px',
+              scale: 1.1,
+              ease: 'ease-in-out',
+            }}
+            animationType="float"
+            interval={0.06}
+            duration={0.8}
+            tag="p"
+            className="animated-paragraph explore-text"
+            includeWhiteSpaces
+            threshold={0.1}
+            rootMargin="20%"
+          > 
+                My dream is to live in a world where mental health does not hinder people's abilities to live vigorous and fulfilling lives, and I am ready to fully dedicate my efforts to make that happen. Are you?
 
-          My sessions are online therefore during any restrictions, and/or clients who have chronic pain and mobility issues can have full benefits where the treatment is essential to their quality of life.
-         
-         
+          </AnimatedText>
 
-</AnimatedText>
-<AnimatedText
-  type="words" // animate words or chars
-  animation={{
-    x: '200px',
-    y: '-20px',
-    scale: 1.1,
-    ease: 'ease-in-out',
-  }}
-  animationType="float"
-  interval={0.06}
-  duration={0.8}
-  tag="p"
-  className="animated-paragraph explore-text"
-  includeWhiteSpaces
-  threshold={0.1}
-  rootMargin="20%"
-> 
-       My dream is to live in a world where mental health does not hinder people's abilities to live vigorous and fulfilling lives, and I am ready to fully dedicate my efforts to make that happen. Are you?
-
-</AnimatedText>
-
+          <Button data-aos="fade-right" data-aos-duration="7000"  className="home-button mt-4" to={"/contact"}>
+            Free Discovery Call
+          </Button>
 
         </div>
 

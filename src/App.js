@@ -8,7 +8,7 @@ import Appoinment from "./Appoinment";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Accordion from "./Accordion";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { SliderData } from "./SliderData";
 import { InfoData } from "./InfoData";
 import BlogSection from "./BlogSection";
@@ -17,6 +17,9 @@ import AllBlogs from "./AllBlogs";
 import Programs from "./Programs";
 import ProgramSection from "./ProgramSection";
 import PriceSection from "./PriceSection";
+import Testimonial from "./Testomonial";
+import AppPayment from "./AppPayment";
+import Thankyou from "./thankyou";
 // import Paypal from './../src/payment/Payment'
 function App() {
   return (
@@ -31,11 +34,14 @@ function App() {
         <Route exact path="/packages" element={<PriceSection />} />
         <Route exact path="/faq" element={<Accordion />} />
         <Route exact path="/about" element={<About />} />
+        <Route exact path="/testimonial" element={<Testimonial />} />
         <Route exact path="/blogs" element={<AllBlogs />} />
 
         {/* <Route exact path="/blogs" element={<BlogSection {...InfoData} />} /> */}
         <Route exact path="/blog/:id" element={<BlogSection />} />
         <Route exact path="/program/:id" element={<ProgramSection />} />
+        <Route exact path="/payment-after-appointment" element={<AppPayment />} />
+        <Route exact path="/thank-you" element={<Thankyou />} />
       </Routes>
 
       <Footer />

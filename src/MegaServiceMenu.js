@@ -52,17 +52,15 @@ const MegaServiceMenu = () => {
                             </div>
                             <div class="ruby-col-4">
                               <span class="ruby-c-title ruby-margin-10">
-                                <a href={"#"}>{val.title}</a>
+                                <p>{val.sub_title}</p>
                               </span>
                               <span class="ruby-c-content">
-                                {val.details.substring(0, 200)}
-                                <br />
                                 <Button
                                   to={`/program/${val.id}`}
                                   className="home-button"
                                   style={{ marginTop: "10px" }}
                                 >
-                                  read more
+                                  Read more
                                 </Button>
                               </span>
                             </div>

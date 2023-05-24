@@ -57,9 +57,6 @@ const InfoSection = ({
               <li>
                 <img className="wellogoimg" src={logo1} alt="" />
               </li>
-              {/* <li >
-                          <img className="wellogoimg" src={logo2} alt="" />
-                        </li> */}
               <li>
                 <img className="afwellogoimg" src={logo3} alt="" />
               </li>

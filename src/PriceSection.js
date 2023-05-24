@@ -38,7 +38,7 @@ const PriceSection = () => {
                   </ul>
                 </div>
                 <div class="pricingTable-signup">
-                  <a href="/appointment">go for a free call</a>
+                  <a href="/appointment">Free Discovery Call</a>
                 </div>
               </div>
             </div>
@@ -64,11 +64,11 @@ const PriceSection = () => {
                 </div>
                 <div class="pricingTable-signup">
                   <a
-                    data-toggle="modal"
-                    data-target="#staticBackdrop"
+                    // data-toggle="modal"
+                    // data-target="#staticBackdrop"
                     href="/appointment"
                   >
-                    Book Now
+                    Free Discovery Call
                   </a>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const PriceSection = () => {
                   </ul>
                 </div>
                 <div class="pricingTable-signup">
-                  <a href="/appointment">Book Now</a>
+                  <a href="/appointment">Free Discovery Call</a>
                 </div>
               </div>
             </div>
@@ -119,7 +119,7 @@ const PriceSection = () => {
                   </ul>
                 </div>
                 <div class="pricingTable-signup">
-                  <a href="/appointment">Book Now</a>
+                  <a href="/appointment">Free Discovery Call</a>
                 </div>
               </div>
             </div>

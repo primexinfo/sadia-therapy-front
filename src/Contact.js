@@ -14,9 +14,9 @@ function Contact() {
   return (
     <>
       <section className=" section contact-section">
-        <div className="container">
+        <div className="container mt-5">
           <div className="row">
-            <div className="col-12 text-center mb-2">
+            <div className="col-12 text-center mb-2 mt-5">
               <h2 className="hero-title">Contact with me</h2>
             </div>
           </div>

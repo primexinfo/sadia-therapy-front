@@ -62,7 +62,7 @@ const CheckoutForm = (amount, remail) => {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "http://localhost:3000/thank-you",
+        return_url: "https://sadiatherapy.com/thank-you",
       },
     });
 

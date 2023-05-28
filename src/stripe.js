@@ -4,7 +4,7 @@ import { Elements } from "@stripe/react-stripe-js";
 
 import CheckoutForm from "./CheckoutForm";
 import "./Stripe.css";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
@@ -16,7 +16,6 @@ const StripePaymentComponent = (data) => {
   const [clientSecret, setClientSecret] = useState("");
 
   // const [childData, setChildData] = useState('');
-  const navigate = useNavigate();
   const amount = location.state.amount;
   const email = location.state.email;
 

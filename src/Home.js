@@ -81,6 +81,7 @@ const NextArrow = styled(IoArrowForward)`
   ${arrowButtons}
 `;
 function Home({ slides }) {
+  document.title = "Sadia Afrin-Solution Focused Hypnotherapist";
   useEffect(()=>{
     Aos.init({duration:2000})
   },[])

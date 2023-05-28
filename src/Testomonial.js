@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
-import Tdata from "./Tdata";
 import axios from "axios";
-import { api, BASE_URL, IMG_BASE_URL } from "./api/api";
+import { api, IMG_BASE_URL } from "./api/api";
 
 
 

@@ -8,7 +8,7 @@ import Aos from "aos";
 import logo from "../src/image/contact-img.png";
 import "aos/dist/aos.css";
 function Contact() {
-  document.title = "Contact"
+  document.title = "Sadia Afrin-Solution Focused Hypnotherapist"
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);

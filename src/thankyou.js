@@ -12,7 +12,7 @@ const Thankyou = () => {
                         Thanks for your payment.
                         </h3>
                     </div>
-                        <img src={image} className="w-100" />
+                        <img src={image} className="w-100" alt="CongratulationS" />
                 </div>
             </div>
         </div>

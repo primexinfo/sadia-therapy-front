@@ -12,6 +12,7 @@ import { useLocation } from "react-router-dom";
 const stripePromise = loadStripe("pk_test_51M65k4Aw7ReRNK0FaL8AMne3coIBZv5O5DQmiKmtAZGoNSihLicd2na1jhu4pMKS2e7WbYgQGuCAZu0a5itg8klH002FYePEyN");
 
 const StripePaymentComponent = (data) => {
+  document.title = "Pay Now";
   const location = useLocation();
   const [clientSecret, setClientSecret] = useState("");
 

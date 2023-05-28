@@ -3,6 +3,7 @@ import image from "../src/image/cong.gif"
 
 
 const Thankyou = () => {
+    document.title = "Congratulations! Thanks for your payment";
     return(
         <div className="row rml justify-content-center">
             <div className="col-sm-12 col-md-6">

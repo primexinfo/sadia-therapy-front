@@ -9,9 +9,11 @@ import "./programsection.css";
 
 
 const ProgramSection = () => {
-  const { id } = useParams();
-
+  
   const [program, setProgram] = useState([]);
+  
+  document.title = program.title;
+  const { id } = useParams();
 
   useEffect(() => {
     axios.get(`${BASE_URL}/programm/${id}`).then((res) => {

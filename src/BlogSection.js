@@ -10,6 +10,7 @@ const BlogSection = () => {
   const { id } = useParams();
 
   const [blog, setBlog] = useState([]);
+  document.title = blog.title;
 
   useEffect(() => {
     axios.get(`https://www.admin.sadiatherapy.com/api/blog/${id}`).then((res) => {

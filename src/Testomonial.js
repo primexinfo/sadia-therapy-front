@@ -6,6 +6,7 @@ import { api, BASE_URL, IMG_BASE_URL } from "./api/api";
 
 
 const Testimonial = () => {
+    document.title = "Testimonial";
     const [testimonial, setTestimonial] = useState([])
     useEffect(()=>{
         axios.get(api.testimonial).then((res)=>{

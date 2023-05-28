@@ -3,6 +3,7 @@ import image from "../src/image/Torso.jpeg";
 
 import "./about.css";
 function About() {
+  document.title = "About Me";
   return (
     <div className="container anim">
       <div className="title">

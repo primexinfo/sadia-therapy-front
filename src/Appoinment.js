@@ -13,6 +13,7 @@ import axios from "axios";
 import { notify } from "react-notify-toast";
 
 const Appoinment = () => {
+  document.title = "Appointment";
   const d = new Date();
   const [appointment_name, setName] = useState("");
   const [amount, setAmount] = useState("");

@@ -47,6 +47,7 @@ img{
 width: 100%;
 height: 100%;
 object-fit: cover;
+}
 @media screen and (max-width:768px){
     width:90%;
     height:90%
@@ -102,6 +103,7 @@ const Dropdown = styled.div`
 `;
 
 const Accordion = () => {
+  document.title =  "Freequently asked Question";
   const [clicked, setClicked] = useState(false);
   
   const toggle = (index) => {

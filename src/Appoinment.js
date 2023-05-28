@@ -10,10 +10,12 @@ import "./appointment.css";
 import AnimatedText from 'react-animated-text-content';
 import { BASE_URL } from './api/api';
 import axios from "axios";
+import { notify } from "react-notify-toast";
 
 const Appoinment = () => {
   const d = new Date();
   const [appointment_name, setName] = useState("");
+  const [amount, setAmount] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [appointment_date, setDate] = useState(new Date());
@@ -24,15 +26,17 @@ const Appoinment = () => {
     setDate(date);
     setTime(date);
   };
+
   function saveAppointment(e) {
     
     e.preventDefault();
-    let data = { appointment_name, phone, email, appointment_date, appointment_time  };
+    let data = { appointment_name, phone, email, appointment_date, appointment_time, amount  };
     axios.post(`${BASE_URL}/set-appoint`, data)
       .then( res => 
         {
-          alert(res.data);
-          navigate("/payment-after-appointment")
+          let myColor = { background: 'green', text: "#FFFFFF" };
+          notify.show("Success! Please pay now.", "custom", 5000, myColor);
+          navigate("/payment-after-appointment",{state:{amount:amount, email:email}})
           
         }
       ).catch(error => {
@@ -41,6 +45,7 @@ const Appoinment = () => {
   }
   return (
     <>
+      
       {/* <LocalizationProvider dateAdapter={AdapterDayjs}> */}
       <div className="row rml justify-content-center">
         <div className="col-sm-12 col-md-6">
@@ -52,6 +57,16 @@ const Appoinment = () => {
               </div>
               <div className="modal-body">
                 <form onSubmit={saveAppointment}>
+                  <select className="form-control mb-2" name="amount" onChange={(e) => {
+                      setAmount(e.target.value);
+                    }
+                  }>
+                    <option selected={false} required>SELECT YOUR PACKAGE</option>
+                    <option value="4000">RELAXATION SESSION $40</option>
+                    <option value="12000">SINGLE SESSION $120</option>
+                    <option value="30000">THREE SESSION PACKAGE $300</option>
+                    <option value="50000">FIVE SESSION PACKAGE $500</option>
+                  </select>
                   <div className="form-group">
                     <input
                       onChange={(e) => {

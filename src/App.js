@@ -18,14 +18,15 @@ import Programs from "./Programs";
 import ProgramSection from "./ProgramSection";
 import PriceSection from "./PriceSection";
 import Testimonial from "./Testomonial";
-import AppPayment from "./AppPayment";
 import Thankyou from "./thankyou";
+import Notification from "react-notify-toast";
+import StripePaymentComponent from "./stripe";
 // import Paypal from './../src/payment/Payment'
 function App() {
   return (
     <>
       <Navbar />
-
+      
       <Routes>
         <Route exact path="/" element={<Home slides={SliderData} />} />
         <Route exact path="/contact" element={<Contact />} />
@@ -40,9 +41,10 @@ function App() {
         {/* <Route exact path="/blogs" element={<BlogSection {...InfoData} />} /> */}
         <Route exact path="/blog/:id" element={<BlogSection />} />
         <Route exact path="/program/:id" element={<ProgramSection />} />
-        <Route exact path="/payment-after-appointment" element={<AppPayment />} />
+        <Route exact path="/payment-after-appointment" element={<StripePaymentComponent />} />
         <Route exact path="/thank-you" element={<Thankyou />} />
       </Routes>
+      <Notification  options={{zIndex: 200, top: '200px'}}/>
 
       <Footer />
     </>

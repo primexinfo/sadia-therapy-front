@@ -6,14 +6,15 @@ import {
   useElements
 } from "@stripe/react-stripe-js";
 
-const CheckoutForm = ({ onChildData }) => {
+const CheckoutForm = (amount, remail) => {
   const stripe = useStripe();
   const elements = useElements();
 
   const [email, setEmail] = useState('');
-  const [amount, setAmount] = useState('');
   const [message, setMessage] = useState(null);
+  // const [amount, setAmount] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+
 
   useEffect(() => {
     if (!stripe) {
@@ -77,32 +78,16 @@ const CheckoutForm = ({ onChildData }) => {
   const paymentElementOptions = {
     layout: "tabs"
   }
-  const sendDataToParent = (data) => {
-    onChildData(amount);
-  };
 
   return (
     <form id="payment-form" onSubmit={handleSubmit}>
             
-      <select className="form-control form-control-lg mb-2" name="amount" onChange={(e) => {
-          setAmount(e.target.value);
-          sendDataToParent();
-        }
-      }>
-        <option selected={false} >SELECT YOUR PACKAGE</option>
-        <option value="4000">RELAXATION SESSION $40</option>
-        <option value="12000">SINGLE SESSION $120</option>
-        <option value="30000">THREE SESSION PACKAGE $300</option>
-        <option value="50000">FIVE SESSION PACKAGE $500</option>
-      </select>
-      {/* <button type="button" onClick={sendDataToParent}>Is </button> */}
-
       <LinkAuthenticationElement
         id="link-authentication-element"
         onChange={(e) => setEmail(e.target.value)}
       />
       <PaymentElement data={amount} id="payment-element" options={paymentElementOptions} />
-      <button disabled={isLoading || !stripe || !elements || amount < 40} id="submit" onClick={sendDataToParent} className=" btn btn-primary sub-button btn-block">
+      <button disabled={isLoading || !stripe || !elements || amount < 4000} id="submit" className=" btn btn-primary sub-button btn-block">
         <span id="button-text">
           {isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}
         </span>

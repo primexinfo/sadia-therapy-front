@@ -1,4 +1,5 @@
 import React from "react";
+import image from "../src/image/cong.gif"
 
 
 const Thankyou = () => {
@@ -11,6 +12,7 @@ const Thankyou = () => {
                         Thanks for your payment.
                         </h3>
                     </div>
+                        <img src={image} className="w-100" />
                 </div>
             </div>
         </div>

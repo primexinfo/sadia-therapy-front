@@ -9,7 +9,8 @@ import { useLocation } from "react-router-dom";
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
-const stripePromise = loadStripe("pk_test_51M65k4Aw7ReRNK0FaL8AMne3coIBZv5O5DQmiKmtAZGoNSihLicd2na1jhu4pMKS2e7WbYgQGuCAZu0a5itg8klH002FYePEyN");
+// const stripePromise = loadStripe("pk_test_51M65k4Aw7ReRNK0FaL8AMne3coIBZv5O5DQmiKmtAZGoNSihLicd2na1jhu4pMKS2e7WbYgQGuCAZu0a5itg8klH002FYePEyN");
+const stripePromise = loadStripe("pk_live_51MFAUOLr69MEIRknyQSo49N7Z6gtqj7AZvfVpOvqj5f8AHOAZ9MXxnqJVr3dVmb2c6BrnPd8MWt153aNuTiEvkjn00CP3SLjsP");
 
 const StripePaymentComponent = (data) => {
   document.title = "Pay Now";
@@ -58,7 +59,7 @@ const StripePaymentComponent = (data) => {
                 </div>
                 {clientSecret && (
                   <Elements options={options} stripe={stripePromise}>
-                    <CheckoutForm amount={amount} email={email}/>
+                    <CheckoutForm amount={{amount, email}}/>
                   </Elements>
                 )}
             </div>

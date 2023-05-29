@@ -63,10 +63,10 @@ const Appoinment = () => {
                     }
                   }>
                     <option selected={false} required>SELECT YOUR PACKAGE</option>
-                    <option value="4000">RELAXATION SESSION $40</option>
-                    <option value="12000">SINGLE SESSION $120</option>
-                    <option value="30000">THREE SESSION PACKAGE $300</option>
-                    <option value="50000">FIVE SESSION PACKAGE $500</option>
+                    <option value="4000">RELAXATION SESSION £40</option>
+                    <option value="12000">SINGLE SESSION £120</option>
+                    <option value="30000">THREE SESSION PACKAGE £300</option>
+                    <option value="50000">FIVE SESSION PACKAGE £500</option>
                   </select>
                   <div className="form-group">
                     <input

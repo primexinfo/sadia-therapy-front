@@ -1,14 +1,26 @@
-import React, { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { faPhone } from "@fortawesome/free-solid-svg-icons";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
+import React, { useEffect, useRef } from "react";
+import emailjs from '@emailjs/browser';
+import { notify } from "react-notify-toast";
 import "./infosection.css";
 import Aos from "aos";
 import logo from "../src/image/contact-img.png";
 import "aos/dist/aos.css";
 function Contact() {
-  document.title = "Sadia Afrin-Solution Focused Hypnotherapist"
+  document.title = "Sadia Afrin-Solution Focused Hypnotherapist";
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_khwc4ig', 'template_2sv3k3h', form.current, 'QIpPgytmPewy2bpyc')
+      .then((result) => {
+        let myColor = { background: 'green', text: "#FFFFFF" };
+        notify.show("Thank you for contacting me. I will get back to you shortly!", "custom", 5000, myColor);
+        // console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  };
   useEffect(() => {
     Aos.init({ duration: 3000 });
   }, []);
@@ -24,13 +36,13 @@ function Contact() {
           <div className="row">
             <div className="col-lg-5 col-md-5 order-md-last d-flex pl-3 pr-3">
               <div className="contact-wrap w-100">
-                <form data-aos="fade-left">
+                <form ref={form} data-aos="fade-left" onSubmit={sendEmail}>
                   <div className="form-group">
                     <span>Full Name</span>
                     <input
                       type="text"
                       className="form-control"
-                      name=""
+                      name="user_name"
                       required="required"
                       placeholder="Enter Your Name"
                     />
@@ -38,16 +50,26 @@ function Contact() {
                   <div className="form-group">
                     <span>Email</span>
                     <input
-                      type="text"
+                      type="email"
                       className="form-control"
-                      name=""
+                      name="user_email"
                       required="required"
                       placeholder="Enter Your Email"
                     />
                   </div>
                   <div className="form-group">
+                    <span>Subject</span>
+                    <input
+                      type="text"
+                      className="form-control"
+                      name="subject"
+                      required="required"
+                      placeholder="Enter Subject"
+                    />
+                  </div>
+                  <div className="form-group">
                     <span>Write your message</span>
-                    <textarea
+                    <textarea name="message"
                       required="required"
                       className="form-control"
                       placeholder="Write Your Message"

@@ -1,23 +1,23 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-import { Button } from "./Button";
-import { NavLink } from "react-router-dom";
+// import { Button } from "./Button";
+// import { NavLink } from "react-router-dom";
 import axios from "axios";
 import "./infosection.css";
-import { Link } from "react-router-dom";
-import { api, IMG_BASE_URL } from "./api/api";
+// import { Link } from "react-router-dom";
+import { api } from "./api/api";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-const Conteiner = styled.div`
-  // padding: 3rem calc((100vh-1300px) / 2);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 800px;
-  @media screen and (max-width: 767px) {
-    grid-template-columns: 1fr;
-  }
-`;
+// const Conteiner = styled.div`
+//   // padding: 3rem calc((100vh-1300px) / 2);
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-template-rows: 800px;
+//   @media screen and (max-width: 767px) {
+//     grid-template-columns: 1fr;
+//   }
+// `;
 
 const InfoSection = ({
   heading,
@@ -29,7 +29,7 @@ const InfoSection = ({
   logo3,
   logo4,
 }) => {
-  const [frontBlog, setFrontBlog] = useState([]);
+  const [setFrontBlog] = useState([]);
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);

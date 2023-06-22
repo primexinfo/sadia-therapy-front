@@ -19,7 +19,7 @@ const ProgramSection = () => {
     axios.get(`${BASE_URL}/programm/${id}`).then((res) => {
         setProgram(res.data);
     });
-  }, []);
+  }, [id]);
  
   return (
     <>

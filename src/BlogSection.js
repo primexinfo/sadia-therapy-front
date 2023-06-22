@@ -16,7 +16,7 @@ const BlogSection = () => {
     axios.get(`https://www.admin.sadiatherapy.com/api/blog/${id}`).then((res) => {
         setBlog(res.data);
     });
-  }, []);
+  }, [id]);
  
   return (
     <>
